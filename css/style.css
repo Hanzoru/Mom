@@ -1,0 +1,571 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+header{
+    background-color:#FEF5ED;
+    width:100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+
+.logo{
+    margin-left: 50px;
+}
+
+.galeria{
+    display: flex;
+    padding-top: 10rem;
+    overflow-x: scroll;
+    margin: auto;
+    width: 80%;
+}
+
+.galeria::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+
+.galeria::-webkit-scrollbar-track {
+    background: #cfced1;
+    border-radius: 6px;        /* color of the tracking area */
+}
+
+.galeria::-webkit-scrollbar-thumb {
+    background-color: #838285;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #FCFAFF;  /* creates padding around scroll thumb */
+}
+
+
+.galeriaFotos{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin-left: 7%;
+    margin-bottom: 3%;
+}
+
+.carousel{
+    display: flex;
+    align-items: center;
+}
+
+.carousel a {
+    font-size: 40px;
+    margin:10px;
+}
+
+.navBar{
+    margin: 5px;
+    text-align: center;
+}
+
+.colorNav{
+    color: #D6DBD5;
+    list-style: none;
+}
+
+
+li{
+    display: inline;
+    padding: 20px;
+    border-radius: 10%;
+}
+
+body{
+    font-family: 'Pushster', cursive;
+    background-color:#FFCEFC;
+}
+
+/* Efecto Pulse*/
+
+.thumbnail{
+    animation: pulse 1s infinite;
+    border-radius: 50%;
+    float: left;
+    width: 200px;
+    margin: 0 15px 15px 0;
+    padding: 5px;
+    left: 5px;
+
+}
+
+@keyframes pulse {
+    from {
+        box-shadow: 0 0 0 0 #F6A5E4;
+    }
+    to {
+        box-shadow: 0 0 0 15px rgba(255, 122, 0, 0);
+    }
+
+}
+
+/* Fin efecto Pulse */
+
+p{
+    color: #090A13;
+    font-size: 24px;
+    text-align: left;
+    line-height: 50px;
+    padding-left: 1%;
+    padding-bottom: 20px;
+}
+
+.backColorNosotros{
+    padding-bottom: 60px;
+    background-color: #D4978E;
+}
+
+.foot{
+    text-align: left;
+}
+
+
+#margen{
+    margin-right: 30px;
+}
+
+.clearBoth {
+    clear:both;
+}
+
+.separador{
+    margin-top:100px;
+    padding-left: 390px;
+}
+
+
+.titleQuienesSomos{
+    text-align:center;
+    padding-left: 1%;
+    margin-top: 80px;
+    font-size: 20px;
+}
+
+.titleProfesionales{
+    text-align:start;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.titleNosotros{
+    text-align: start;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding:1%;
+    font-size: 25px;
+}
+.separador2{
+    left: 470px;
+    position: relative;
+    margin-top: 50px;
+    width: 400px;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+
+.videoText{
+    margin-top: 40px;
+    margin-bottom: 50px;
+} 
+
+.videoDerecha{
+    float: right;
+    bottom:98px;
+    margin: 0 0 10px 10px;
+    padding-right: 50px;
+} 
+
+
+.redes, .contacto {
+    position:relative;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 24px
+}
+
+.redes{
+    left: 400px;
+}
+
+.footTitle{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.box{
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+}
+
+.footInfo{
+    display: inline-block;
+}
+
+
+.facebook{
+    position: relative;
+    left: 580px;
+    cursor: pointer;
+}
+
+.instagram{
+    position:relative;
+    left: 200px;
+    cursor: pointer;
+}
+
+.logoWhatsapp{
+    position: sticky;
+    height: 50px;
+    float: right;
+    bottom: 10px;
+}
+
+/* Comienzo Página Trending */
+
+.imgHeadTrending{
+    position: relative;
+    width: 100%;
+    bottom: 150px;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.boxHead{
+    height: 4px;
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+    bottom: 10rem;
+}
+
+.boxNovedades{
+    width: 20rem;
+    height: 5rem;
+    margin: auto;
+    background-color: #D39BF0;
+    position: relative;
+    top: 4rem;
+    z-index: -1;
+    border-radius: 8%;
+}
+
+.novedades{
+    text-align: center;
+    font-size: 2rem;
+    z-index: 2;
+}
+
+.container{
+    position:relative;
+    height: 300px;
+    width: 1200px;
+    margin: 8rem auto;
+} 
+.container .box1{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: #C5E3F0;
+    float: left;
+    margin: 40px;
+    box-sizing:border-box;
+    overflow: hidden;
+    left: 9rem;
+    border-radius: 10px;
+}
+
+.container .box1 .icon{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.container .box1 .icon:hover{
+    top:20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius:50%;
+}
+
+.container .box1 .icon .ic{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5s;
+    font-size: 100px;
+}
+
+.container .box1:hover .icon .ic{
+    height: 80px;
+}
+
+.container .box1 .content{
+    position: absolute;
+    height: calc(100% - 10px);
+    text-align: center;
+    padding: 20px;
+    top:100%;
+    transition: 0.5s;
+}
+.container .box1:hover .content{
+    top:100px
+}
+
+.container .box1 .content h3{
+    margin: 0;
+    padding: 0;
+    color:black;
+}
+
+.container .box1 .content p{
+    margin: 0;
+    padding: 0;
+    color:black;
+}
+
+.container .box1:nth-child(1) .icon{
+    background: #FA4D29;
+}
+
+.container .box1:nth-child(2) .icon{
+    background: #E0A577;
+}
+
+.container .box1:nth-child(3) .icon{
+    background: #ED729C;
+}
+
+.container .box1:nth-child(4) .icon{
+    background:#7B72ED;
+}
+.spanTitulo{
+    color:#C227A0;
+    font-size: 25px;
+}
+
+.fondoImg2{
+    background-image: url(https://www.wallpapertip.com/wmimgs/36-363490_backgrounds-makeup.jpg);
+}
+
+/* Fin Página Trending */
+
+/* Comienzo Página de contacto*/
+
+form{
+    position: relative;
+    padding: auto;
+    text-align: center;
+    width: 400px;
+    margin-bottom: 100px;
+    left: 30%;
+    font-size: 22px;
+    color: #DB478F;
+    bottom: 50px;
+}
+
+#colorContactanos{
+    color: #F017B3;
+}
+
+.fondoImg5{
+    background-image: url(https://st4.depositphotos.com/16122460/i/600/depositphotos_264157144-stock-photo-beautiful-woman-with-stylish-nail.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sendButton{
+    background-color: #146CFA;
+    border-radius: 15%;
+    font-size: 18px;
+    position: relative;
+    left: 50px;
+    bottom: 5px;
+}
+
+.eraseButton{
+    border-radius: 15%;
+    font-size: 18px;
+    position: relative;
+    right: 50px;
+    bottom: 5px;
+}
+/* Fin Página Contacto */
+
+/* Comienzo Página Cursos */
+.cursoImg1{
+    position: relative;
+    float: left;
+    margin: 0 0 10px 10px;
+    padding-right: 50px;
+    border-radius: 10%;
+    width: 20%;
+    height: 10%;
+    padding-top: 20px;
+    filter: drop-shadow(16px 16px 10px black);
+    transition: all 0.5s;
+}
+
+.curso1{
+    background-color: #146CFA;
+    padding-bottom:0;
+    padding-top:20px;
+}
+
+.contentCourse1{
+    display: inline-block;
+    position: relative;
+    left: 2rem;
+    padding-top: 50px;
+    padding-bottom: 100px; 
+}
+
+.cursoTitulo{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+h2{
+    margin-bottom: 15px;
+}
+
+.cursoImg2{
+    position: relative;
+    float: right;
+    margin: 0 0 10px 10px;
+    padding-right: 50px;
+    border-radius: 10%;
+    width: 20%;
+    height: 10%;
+    padding-top: 20px;
+    filter: drop-shadow(16px 16px 10px black);
+    transition: all 0.5s;
+}
+
+.curso2{
+    background-color: #F26655;
+}
+
+.imgDiv{
+    position: relative;
+    width: 100%;
+    height: 20rem;
+}
+
+.cursoTitulo2{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.boxCurso1{
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+}
+
+.boxCurso2{
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+}
+
+.boxCurso3{
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+}
+/* Fin Página Cursos */
+
+/* Inicio Página Servicios */
+
+.serviceTitle{
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    font-size: 34px;
+    filter: drop-shadow(10px 10px 10px #FF34DC);
+}
+
+.serviceImg{
+    display:inline-flex ;
+    padding-left: 40px;
+    object-fit: cover;
+    position: relative;
+    filter: drop-shadow(10px 10px 16px black);
+}
+
+
+#img1{
+    padding-right: 300px;
+}
+#img2{
+    padding-bottom: 100px;
+}
+
+#img3{
+    padding-left: 300px;
+}
+
+.serviceText{
+    text-align: center;
+}
+
+.imgFinService{
+    text-align: center;
+    position: relative;
+    width: 40%;
+    left:420px;
+    border-radius: 30%;
+}
+
+.tablaPrecios{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.contenidoPrecios{
+
+    text-align: center;
+    position: relative;
+    padding-left: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ACFAB8;
+}
+
+.fondoImg4{
+    background-image: url(https://www.wallpapertip.com/wmimgs/59-591714_feminine-hd-backgrounds-for-pc-data-src-feminine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Fin Página Servicios */
+
