@@ -4,18 +4,21 @@
 }
 
 header{
-    background-color:#FEF5ED;
+    font-family: 'Roboto', sans-serif;
+    background-color:#000000;
     width:100%;
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    z-index: 10;
+    z-index: 100;
+
 }
 
 .logo{
     margin-left: 50px;
+    color: #F017B3;
 }
 
 .galeria{
@@ -27,18 +30,18 @@ header{
 }
 
 .galeria::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
+    width: 12px;              
 }
 
 .galeria::-webkit-scrollbar-track {
     background: #cfced1;
-    border-radius: 6px;        /* color of the tracking area */
+    border-radius: 6px;        
 }
 
 .galeria::-webkit-scrollbar-thumb {
-    background-color: #838285;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid #FCFAFF;  /* creates padding around scroll thumb */
+    background-color: #838285;    
+    border-radius: 20px;      
+    border: 3px solid #FCFAFF;  
 }
 
 
@@ -77,9 +80,33 @@ li{
     border-radius: 10%;
 }
 
+a:hover,
+a:focus {
+    background-size: 100% 2px;
+}
+
 body{
     font-family: 'Pushster', cursive;
-    background-color:#FFCEFC;
+    background-color:#FAEBC3;
+}
+
+.contenedor{
+    text-align: center;
+    margin: 10rem 3rem 3rem 3rem ;
+    padding: 30px;
+    border: solid 1px #99A799;
+    border-radius: 4px;
+    background-color: #F6A5E4;
+    border-radius: 20px;
+    filter: drop-shadow(5px 10px 5px black);
+    transition: all 0.5s;
+    height: auto;
+}
+
+
+.fotosProfesionales{
+    position:relative;
+    margin: auto;
 }
 
 /* Efecto Pulse*/
@@ -87,12 +114,9 @@ body{
 .thumbnail{
     animation: pulse 1s infinite;
     border-radius: 50%;
-    float: left;
     width: 200px;
-    margin: 0 15px 15px 0;
-    padding: 5px;
-    left: 5px;
-
+    margin: 0 15px 39px 0;
+    z-index: 100;
 }
 
 @keyframes pulse {
@@ -110,71 +134,87 @@ body{
 p{
     color: #090A13;
     font-size: 24px;
-    text-align: left;
+    text-align: center;
     line-height: 50px;
     padding-left: 1%;
     padding-bottom: 20px;
 }
 
-.backColorNosotros{
-    padding-bottom: 60px;
-    background-color: #D4978E;
+gridPadreNosotros{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:auto auto auto;
+    grid-template-areas: 
+    "textoVideo videoFacebook";
 }
+
 
 .foot{
     text-align: left;
 }
 
 
-#margen{
-    margin-right: 30px;
-}
-
 .clearBoth {
     clear:both;
 }
 
 .separador{
-    margin-top:100px;
-    padding-left: 390px;
+    position: relative;
+    margin: 10vh 0 5vh 0;
+    text-align: center;
 }
 
 
-.titleQuienesSomos{
-    text-align:center;
-    padding-left: 1%;
-    margin-top: 80px;
-    font-size: 20px;
+.gridPadreQuienesSomos{
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:"parrafo1";
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.titleProfesionales{
-    text-align:start;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 5px;
-    font-size: 15px;
+.parrafo1 {
+    grid-area: parrafo1;
+    background-color: black
 }
 
-.titleNosotros{
+h2{
     text-align: start;
+    padding-left: 1%;
+    margin-top:3%;
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+h3{
+    text-align:center;
     margin-top: 40px;
     margin-bottom: 40px;
-    padding:1%;
+    padding: 1rem 0 1rem 0;
     font-size: 25px;
 }
+
+
+
 .separador2{
-    left: 470px;
+    text-align: center;
     position: relative;
-    margin-top: 50px;
-    width: 400px;
 }
 
 a{
     text-decoration: none;
     text-align: center;
     font-size: 24px;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
 }
 
+.logoWhatsapp a {
+    background-position: 0% 0%;
+    background-size: 0% 2px;
+}
 
 
 .videoText{
@@ -184,18 +224,14 @@ a{
 
 .videoDerecha{
     float: right;
-    bottom:98px;
+    width: 400px;
     margin: 0 0 10px 10px;
-    padding-right: 50px;
+    filter: drop-shadow(16px 16px 10px black);
+    transition: all 0.5s;
+    border-radius: 10px;
 } 
 
 
-.redes, .contacto {
-    position:relative;
-    margin-bottom: 15px;
-    padding: 15px;
-    font-size: 24px
-}
 
 .redes{
     left: 400px;
@@ -215,70 +251,227 @@ a{
     position: absolute;
 }
 
-.footInfo{
-    display: inline-block;
-}
-
-
-.facebook{
-    position: relative;
-    left: 580px;
-    cursor: pointer;
+gridPadreFooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "instagram facebook";
 }
 
 .instagram{
-    position:relative;
-    left: 200px;
-    cursor: pointer;
+    grid-area: instagram;
 }
+
+.facebook{
+    grid-area: facebook;
+}
+
+footer{
+    background-color:#FEF5ED;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li a {
+    margin-left: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+
+footer h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
 
 .logoWhatsapp{
     position: sticky;
-    height: 50px;
-    float: right;
-    bottom: 10px;
+    height: 15vh;
+    float: left;
+    bottom: 5vh;
+    padding: 0 4vh 0 0;
 }
 
 /* Comienzo Página Trending */
 
-.imgHeadTrending{
-    position: relative;
-    width: 100%;
-    bottom: 150px;
+.imagenEncabezado{
     height: 30rem;
-    object-fit: cover;
-}
-
-.boxHead{
-    height: 4px;
+    object-fit: cover; 
     width: 100%;
-    background-color: #000000;
-    position: relative;
-    bottom: 10rem;
+    border-bottom: 3px solid black;
 }
 
-.boxNovedades{
-    width: 20rem;
-    height: 5rem;
-    margin: auto;
-    background-color: #D39BF0;
-    position: relative;
-    top: 4rem;
-    z-index: -1;
-    border-radius: 8%;
-}
-
-.novedades{
+.tituloNovedades{
     text-align: center;
     font-size: 2rem;
     z-index: 2;
 }
 
+
+@media only screen and (max-width:799px) and (min-width:600px) {
+    .imagenEncabezado{
+        width: 800px;
+    }
+
+    .container {
+        margin-left: 50px;
+    }
+    #footerTrending {
+        display: none;
+    }
+
+    .tituloNovedades {
+        text-align: center;
+    }
+
+    .gridPadreServicios {
+        overflow-x:scroll ;
+    }
+}
+
+@media only screen and (max-width:599px) {
+
+    /* VISTA MOBILE TRENDING */
+    .imagenEncabezado{
+        display: none;
+
+    }
+    .logoWhatsapp {
+        margin-left: 10px;
+    }
+    .tituloNovedades {
+    display: none;
+    }
+
+    #footerTrending{
+        background-color: #ED729C;
+        display: none;
+    }
+
+    /* VISTA MOBILE INDEX */
+
+    .separadorPropiedades {
+        width: 300px ;
+        margin-top: 50px;
+    }
+
+    .separador2Propiedades {
+        width: 300px ;
+        margin-top: 50px;
+    }
+
+    p{
+        text-align: start;
+        font-size: 30px;
+    }
+
+    .videoDerecha{
+    width: 100%;
+    filter: drop-shadow(16px 16px 10px black);
+    transition: all 0.5s;
+    } 
+
+    .thumbnail{
+        animation: pulse 1s infinite;
+        border-radius: 50%;
+        width: 200px;
+        margin: 0 15px 39px 0;
+        z-index: 1000;
+    }
+    
+    @keyframes pulse {
+        from {
+            box-shadow: 0 0 0 0 #F6A5E4;
+        }
+        to {
+            box-shadow: 0 0 0 15px rgba(255, 122, 0, 0);
+        }
+
+    }
+
+    header{
+        font-family: 'Roboto', sans-serif;
+        background-color:#000000;
+        display:inline-block;
+        width:100%;
+        height: 150px;
+        align-items: center;
+        position: fixed;
+        z-index: 100;
+    }
+
+    .navbar ul li {
+        margin: 0 0 10px 0;
+        padding: 0;
+    }
+
+
+    .logo{
+        margin: 10px;
+        text-align: center;
+    }
+
+    .navBar {
+        margin:0;
+        text-align: center;
+    }
+
+    .colorNav {
+        font-size: 20px;
+    }
+
+    /* VISTA MOBILE CURSOS */
+
+    .cursoImg2{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .cursoImg1 {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .imgDiv{
+        display: none;
+    }
+
+    #footerCursos{
+        display: none;
+    }
+
+    .gridPadreServicios {
+        overflow-x: scroll;
+    }
+
+    .contenidoPrecios {
+        overflow-x: scroll;
+    }
+
+
+
+
+}
+
 .container{
-    position:relative;
+    position: relative;
     height: 300px;
-    width: 1200px;
-    margin: 8rem auto;
+    width: 800px;
+    margin:auto;
 } 
 .container .box1{
     position: relative;
@@ -368,107 +561,97 @@ a{
     font-size: 25px;
 }
 
-.fondoImg2{
-    background-image: url(https://www.wallpapertip.com/wmimgs/36-363490_backgrounds-makeup.jpg);
-}
-
 /* Fin Página Trending */
 
 /* Comienzo Página de contacto*/
 
-form{
-    position: relative;
-    padding: auto;
-    text-align: center;
-    width: 400px;
-    margin-bottom: 100px;
-    left: 30%;
-    font-size: 22px;
-    color: #DB478F;
-    bottom: 50px;
-}
-
-#colorContactanos{
-    color: #F017B3;
-}
-
-.fondoImg5{
+gridPadreContacto {
+    display: grid;
     background-image: url(https://st4.depositphotos.com/16122460/i/600/depositphotos_264157144-stock-photo-beautiful-woman-with-stylish-nail.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "formulario"
+    ;
 }
 
-.sendButton{
-    background-color: #146CFA;
-    border-radius: 15%;
-    font-size: 18px;
-    position: relative;
-    left: 50px;
-    bottom: 5px;
+.formulario {
+    grid-area:formulario;
 }
 
-.eraseButton{
-    border-radius: 15%;
-    font-size: 18px;
-    position: relative;
-    right: 50px;
-    bottom: 5px;
+.campo {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin: 10px auto;
 }
+
+.botones {
+    margin-top: 15px;
+    font-size: 35px;
+}
+
+
+.boxMensaje{
+    margin-top: 2rem;
+}
+
+form{
+    position: relative;
+    text-align: center;
+    margin-bottom: 200px;
+    font-size: 22px;
+    color: #DB478F;
+    bottom: 50px;
+    top: 150px;
+}
+
+
+
 /* Fin Página Contacto */
 
 /* Comienzo Página Cursos */
+
+
+.gridPadreCursos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "imagen"
+    "texto"
+    ;
+}
+
+.imagen{
+    grid-area: imagen;
+}
+
+.texto{
+    justify-content: texto;
+}
+
 .cursoImg1{
-    position: relative;
-    float: left;
-    margin: 0 0 10px 10px;
-    padding-right: 50px;
-    border-radius: 10%;
-    width: 20%;
-    height: 10%;
-    padding-top: 20px;
+    display: flex;
+    float:left;
+    width:300px;
+    height: 300px;
     filter: drop-shadow(16px 16px 10px black);
     transition: all 0.5s;
 }
 
-.curso1{
-    background-color: #146CFA;
-    padding-bottom:0;
-    padding-top:20px;
-}
-
-.contentCourse1{
-    display: inline-block;
-    position: relative;
-    left: 2rem;
-    padding-top: 50px;
-    padding-bottom: 100px; 
-}
-
-.cursoTitulo{
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-h2{
-    margin-bottom: 15px;
-}
 
 .cursoImg2{
-    position: relative;
     float: right;
-    margin: 0 0 10px 10px;
-    padding-right: 50px;
-    border-radius: 10%;
-    width: 20%;
-    height: 10%;
-    padding-top: 20px;
-    filter: drop-shadow(16px 16px 10px black);
+    padding: 0 50px 0 0;
+    width: 300px;
+    height: 300px;
+    filter: drop-shadow(16px 10px 10px black);
     transition: all 0.5s;
 }
 
-.curso2{
-    background-color: #F26655;
-}
 
 .imgDiv{
     position: relative;
@@ -476,42 +659,32 @@ h2{
     height: 20rem;
 }
 
-.cursoTitulo2{
-    text-align: center;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-
-.boxCurso1{
-    width: 100%;
-    height: 3px;
-    background-color: black;
-    position: absolute;
-}
-
-.boxCurso2{
-    width: 100%;
-    height: 3px;
-    background-color: black;
-    position: absolute;
-}
-
-.boxCurso3{
-    width: 100%;
-    height: 3px;
-    background-color: black;
-    position: absolute;
-}
 /* Fin Página Cursos */
 
 /* Inicio Página Servicios */
 
-.serviceTitle{
-    text-align: center;
-    position: relative;
-    bottom: 50px;
-    font-size: 34px;
-    filter: drop-shadow(10px 10px 10px #FF34DC);
+.gridPadreServicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto;
+    grid-template-areas:
+    "imagen1 imagen2 imagen3"
+    ;
+}
+
+.gridPadrePrecios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #C227A0;
+}
+
+.imagen1, .imagen2, .imagen3 {
+
+    border-radius: 20px;
+}
+
+.contenido1{
+    grid-column: 1 / 3;
 }
 
 .serviceImg{
@@ -523,49 +696,22 @@ h2{
 }
 
 
-#img1{
-    padding-right: 300px;
-}
-#img2{
-    padding-bottom: 100px;
-}
-
-#img3{
-    padding-left: 300px;
-}
-
 .serviceText{
     text-align: center;
 }
 
 .imgFinService{
-    text-align: center;
     position: relative;
-    width: 40%;
-    left:420px;
-    border-radius: 30%;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
 }
 
-.tablaPrecios{
-    padding-top: 50px;
-    text-align: center;
-}
 
 .contenidoPrecios{
-
-    text-align: center;
-    position: relative;
-    padding-left: 500px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: #ACFAB8;
-}
-
-.fondoImg4{
-    background-image: url(https://www.wallpapertip.com/wmimgs/59-591714_feminine-hd-backgrounds-for-pc-data-src-feminine.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+} 
 
 /* Fin Página Servicios */
-
