@@ -27,7 +27,9 @@ header{
     overflow-x: scroll;
     margin: auto;
     width: 80%;
+    
 }
+
 
 .galeria::-webkit-scrollbar {
     width: 12px;              
@@ -94,13 +96,14 @@ body{
     text-align: center;
     margin: 10rem 3rem 3rem 3rem ;
     padding: 30px;
-    border: solid 1px #99A799;
+    /* border: solid 1px #99A799; */
     border-radius: 4px;
-    background-color: #F6A5E4;
+    background-image: radial-gradient(circle, rgba(241,226,166,1) 0%, rgba(255,171,92,1) 35%, rgba(224,138,121,1) 100%);
     border-radius: 20px;
     filter: drop-shadow(5px 10px 5px black);
     transition: all 0.5s;
     height: auto;
+
 }
 
 
@@ -121,7 +124,7 @@ body{
 
 @keyframes pulse {
     from {
-        box-shadow: 0 0 0 0 #F6A5E4;
+        box-shadow: 0 0 0 0 #e18bce;
     }
     to {
         box-shadow: 0 0 0 15px rgba(255, 122, 0, 0);
@@ -161,6 +164,7 @@ gridPadreNosotros{
     position: relative;
     margin: 10vh 0 5vh 0;
     text-align: center;
+    transform: rotate(180deg);
 }
 
 
@@ -214,6 +218,7 @@ a{
 .logoWhatsapp a {
     background-position: 0% 0%;
     background-size: 0% 2px;
+    margin-left: 2vh;
 }
 
 
@@ -296,10 +301,14 @@ footer h4 {
 
 .logoWhatsapp{
     position: sticky;
-    height: 15vh;
+    height: 10vh;
     float: left;
     bottom: 5vh;
     padding: 0 4vh 0 0;
+}
+
+.logoWhatsappPropiedades{
+    width: 90px;
 }
 
 /* Comienzo Página Trending */
@@ -318,154 +327,6 @@ footer h4 {
 }
 
 
-@media only screen and (max-width:799px) and (min-width:600px) {
-    .imagenEncabezado{
-        width: 800px;
-    }
-
-    .container {
-        margin-left: 50px;
-    }
-    #footerTrending {
-        display: none;
-    }
-
-    .tituloNovedades {
-        text-align: center;
-    }
-
-    .gridPadreServicios {
-        overflow-x:scroll ;
-    }
-}
-
-@media only screen and (max-width:599px) {
-
-    /* VISTA MOBILE TRENDING */
-    .imagenEncabezado{
-        display: none;
-
-    }
-    .logoWhatsapp {
-        margin-left: 10px;
-    }
-    .tituloNovedades {
-    display: none;
-    }
-
-    #footerTrending{
-        background-color: #ED729C;
-        display: none;
-    }
-
-    /* VISTA MOBILE INDEX */
-
-    .separadorPropiedades {
-        width: 300px ;
-        margin-top: 50px;
-    }
-
-    .separador2Propiedades {
-        width: 300px ;
-        margin-top: 50px;
-    }
-
-    p{
-        text-align: start;
-        font-size: 30px;
-    }
-
-    .videoDerecha{
-    width: 100%;
-    filter: drop-shadow(16px 16px 10px black);
-    transition: all 0.5s;
-    } 
-
-    .thumbnail{
-        animation: pulse 1s infinite;
-        border-radius: 50%;
-        width: 200px;
-        margin: 0 15px 39px 0;
-        z-index: 1000;
-    }
-    
-    @keyframes pulse {
-        from {
-            box-shadow: 0 0 0 0 #F6A5E4;
-        }
-        to {
-            box-shadow: 0 0 0 15px rgba(255, 122, 0, 0);
-        }
-
-    }
-
-    header{
-        font-family: 'Roboto', sans-serif;
-        background-color:#000000;
-        display:inline-block;
-        width:100%;
-        height: 150px;
-        align-items: center;
-        position: fixed;
-        z-index: 100;
-    }
-
-    .navbar ul li {
-        margin: 0 0 10px 0;
-        padding: 0;
-    }
-
-
-    .logo{
-        margin: 10px;
-        text-align: center;
-    }
-
-    .navBar {
-        margin:0;
-        text-align: center;
-    }
-
-    .colorNav {
-        font-size: 20px;
-    }
-
-    /* VISTA MOBILE CURSOS */
-
-    .cursoImg2{
-        width: 100%;
-        margin-bottom: 50px;
-    }
-
-    .cursoImg1 {
-        width: 100%;
-        margin-bottom: 50px;
-    }
-
-    footer{
-        width: 100%;
-    }
-
-    .imgDiv{
-        display: none;
-    }
-
-    #footerCursos{
-        display: none;
-    }
-
-    .gridPadreServicios {
-        overflow-x: scroll;
-    }
-
-    .contenidoPrecios {
-        overflow-x: scroll;
-    }
-
-
-
-
-}
 
 .container{
     position: relative;
@@ -579,6 +440,15 @@ gridPadreContacto {
 
 .formulario {
     grid-area:formulario;
+}
+
+input {
+    height: 20px;
+    transition: background-color 1s;
+}
+
+input:hover {
+    background-color: #FFAB5C;
 }
 
 .campo {
@@ -715,3 +585,160 @@ form{
 } 
 
 /* Fin Página Servicios */
+
+/* Comienzo MEDIA QUERIS */
+
+@media only screen and (max-width:799px) and (min-width:600px) {
+    .imagenEncabezado{
+        width: 800px;
+    }
+
+    .container {
+        margin-left: 50px;
+    }
+    #footerTrending {
+        display: none;
+    }
+
+    .tituloNovedades {
+        text-align: center;
+    }
+
+    .gridPadreServicios {
+        overflow-x:scroll ;
+    }
+}
+
+@media only screen and (max-width:599px) {
+
+    /* VISTA MOBILE TRENDING */
+    .imagenEncabezado{
+        display: none;
+
+    }
+    .logoWhatsapp {
+        margin-left: 10px;
+    }
+
+    .logoWhatsappPropiedades{
+        width: 50px;
+    }
+    .tituloNovedades {
+    display: none;
+    }
+
+    #footerTrending{
+        background-color: #ED729C;
+        display: none;
+    }
+
+    /* VISTA MOBILE INDEX */
+
+    .separadorPropiedades {
+        width: 300px ;
+        margin-top: 50px;
+    }
+
+    .separador2Propiedades {
+        width: 300px ;
+        margin-top: 50px;
+    }
+
+    p{
+        text-align: start;
+        font-size: 30px;
+    }
+
+    .videoDerecha{
+    width: 100%;
+    filter: drop-shadow(16px 16px 10px black);
+    transition: all 0.5s;
+    } 
+
+    .thumbnail{
+        animation: pulse 1s infinite;
+        border-radius: 50%;
+        width: 200px;
+        margin: 0 15px 39px 0;
+        z-index: 1000;
+    }
+    
+    @keyframes pulse {
+        from {
+            box-shadow: 0 0 0 0 #F6A5E4;
+        }
+        to {
+            box-shadow: 0 0 0 15px rgba(255, 122, 0, 0);
+        }
+
+    }
+
+    header{
+        font-family: 'Roboto', sans-serif;
+        background-color:#000000;
+        display:inline-block;
+        width:100%;
+        height: 150px;
+        align-items: center;
+        position: fixed;
+        z-index: 100;
+    }
+
+    .navbar ul li {
+        margin: 0 0 10px 0;
+        padding: 0;
+    }
+
+
+    .logo{
+        margin: 10px;
+        text-align: center;
+    }
+
+    .navBar {
+        margin:0;
+        text-align: center;
+    }
+
+    .colorNav {
+        font-size: 20px;
+    }
+
+    /* VISTA MOBILE CURSOS */
+
+    .cursoImg2{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .cursoImg1 {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .imgDiv{
+        display: none;
+    }
+
+    #footerCursos{
+        display: none;
+    }
+
+    .gridPadreServicios {
+        overflow-x: scroll;
+    }
+
+    .contenidoPrecios {
+        overflow-x: scroll;
+    }
+
+
+
+
+}
+
+/* FIN MEDIA QUERIS */

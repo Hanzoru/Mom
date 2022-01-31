@@ -18,6 +18,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
         <!--Fuentes de google-->
+        <!-- AOS Library -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
 <body>
     <header>
@@ -37,7 +39,9 @@
     <main>
         <section class="gridPadreCursos">
             <div>
-                <div class="contenedor">
+                <div data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500" class="contenedor">
                     <h2 class="cursoTitulo"><u>Curso Técnica clásica inicial</u></h2>
                     <div class="cursoImg1">
                         <img src="../imagenes/CursoInicialTecnicaClasica.jpg" alt="Img curso" >
@@ -55,7 +59,9 @@
                         </ul>
                     </div> 
                 </div>
-                <div class="contenedor">
+                <div data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" class="contenedor">
                     <h2><u>Curso Uñas iniciales</u></h2>
                         <img src="../imagenes/Uñas servicio 2.jpg" alt="Curso de uñas inicial" class="cursoImg2">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta facilis asperiores commodi quo? Ducimus nemo id commodi sunt perferendis temporibus animi quibusdam tempora et, ipsa praesentium facere nostrum sequi est Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis eius velit omnis! Nihil aperiam voluptatibus consequuntur. Accusamus, expedita. Ut quos fugiat molestias inventore! Maxime, cumque architecto iure laboriosam provident eum!
@@ -79,7 +85,7 @@
     </main>
     <div class="logoWhatsapp">
         <a href="https://api.whatsapp.com/send?phone=1168223643" target="_blank">
-            <img src="../imagenes/whatsapp.png" alt="WhatsappLogo" width="90">
+            <img src="../imagenes/whatsapp.png" alt="WhatsappLogo" class="logoWhatsappPropiedades">
         </a>
     </div>
     <footer class ="gridPadreFooter"id="footerCursos">
@@ -93,5 +99,9 @@
             <h4><span>© 2022 Mom´s - Todos los derechos reservados</span></h4>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body> 
 </html>

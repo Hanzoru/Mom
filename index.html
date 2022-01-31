@@ -19,6 +19,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
         <!-- Fuentes de google -->
+        <!-- AOS Library -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
 <body>
     <header>
@@ -51,7 +53,7 @@
         <div class="separador" >
             <img class="separadorPropiedades" src="./imagenes/Separador.png" alt="separador" >
         </div>
-        <section class="gridPadreQuienesSomos">
+        <section data-aos="fade-up" data-aos-duration="2000" class="gridPadreQuienesSomos">
             <div class="contenedor">
                 <h2>Quienes somos</h2>
                 <h3><u>Nuestros profesionales</u></h3>
@@ -68,7 +70,7 @@
         <div class=separador2>
             <img class="separador2Propiedades" src="./imagenes/separador2.png" alt="separador2" >
         </div>
-        <section class="gridPadreNosotros">
+        <section data-aos="fade-up" data-aos-duration="2000" class="gridPadreNosotros">
             <div class="contenedor">
                 <h2><u>Sobre nosotros</u></h2>
                 <iframe class="videoDerecha" src="https://www.facebook.com/plugins/video.php?height=317&href=https%3A%2F%2Fwww.facebook.com%2Fmonicasusana.passot%2Fvideos%2F4186720698051958%2F&show_text=false&width=560&t=0" height="317" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
@@ -81,7 +83,7 @@
     </main>
     <div class="logoWhatsapp">
         <a href="https://api.whatsapp.com/send?phone=1168223643" target="_blank">
-            <img src="./imagenes/whatsapp.png" alt="WhatsappLogo" width="90">
+            <img src="./imagenes/whatsapp.png" alt="WhatsappLogo" class="logoWhatsappPropiedades">
         </a>
     </div>
     <div class="clearBoth"></div>
@@ -96,5 +98,9 @@
             <h4><span>© 2022 Mom´s - Todos los derechos reservados</span></h4>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
