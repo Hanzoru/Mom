@@ -15,6 +15,11 @@ header{
 
 }
 
+.d-block w-100 {
+    width: 150px;
+    height: 150px;
+}
+
 .container-fluid {
     background-image: radial-gradient(circle, rgba(241,226,166,1) 0%, rgba(255,204,92,0.9164040616246498) 38%, rgba(230,164,151,0.8463760504201681) 100%);
 }
@@ -434,6 +439,11 @@ footer h4 {
 
 /* Comienzo Página de contacto*/
 
+.modal-body {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
 gridPadreContacto {
     display: grid;
     background-image: url(https://st4.depositphotos.com/16122460/i/600/depositphotos_264157144-stock-photo-beautiful-woman-with-stylish-nail.jpg);
@@ -597,19 +607,24 @@ form{
 /* Comienzo MEDIA QUERIS */
 
 @media only screen and (max-width:799px) and (min-width:600px) {
-    .imagenEncabezado{
-        width: 800px;
+
+.barraNavegacion {
+    display: none;
+}
+
+.imagenEncabezado{
+    width: 800px;
     }
 
-    .contenedorInfo {
-        margin-left: 50px;
+.contenedorInfo {
+    margin-left: 50px;
     }
-    #footerTrending {
+#footerTrending {
         display: none;
     }
 
-    .tituloNovedades {
-        text-align: center;
+.tituloNovedades {
+    text-align: center;
     }
 
     .gridPadreServicios {
@@ -654,7 +669,7 @@ form{
 
     p{
         text-align: start;
-        font-size: 30px;
+        font-size: 23px;
     }
 
     .videoDerecha{
@@ -692,8 +707,7 @@ form{
     }
 
     .barraNavegacion {
-        margin:0;
-        text-align: center;
+        display: none;
     }
 
     .barraNavegacion ul li {
