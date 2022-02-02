@@ -35,7 +35,8 @@ header{
 
 .logo{
     margin-left: 50px;
-    color: #F017B3;
+    color: #dd20a8;
+    font-family: 'Pushster', cursive;
 }
 
 .galeria{
@@ -324,7 +325,6 @@ footer h4 {
     width: 90px;
 }
 
-/* Comienzo Página Trending */
 
 .imagenEncabezado{
     height: 30rem;
@@ -435,9 +435,6 @@ footer h4 {
     font-size: 25px;
 }
 
-/* Fin Página Trending */
-
-/* Comienzo Página de contacto*/
 
 .modal-body {
     font-size: 15px;
@@ -497,12 +494,6 @@ form{
 }
 
 
-
-/* Fin Página Contacto */
-
-/* Comienzo Página Cursos */
-
-
 .gridPadreCursos{
     display: grid;
     grid-template-columns: 1fr;
@@ -546,10 +537,6 @@ form{
     width: 100%;
     height: 20rem;
 }
-
-/* Fin Página Cursos */
-
-/* Inicio Página Servicios */
 
 .gridPadreServicios{
     display: grid;
@@ -602,9 +589,6 @@ form{
     grid-template-rows: auto auto auto;
 } 
 
-/* Fin Página Servicios */
-
-/* Comienzo MEDIA QUERIS */
 
 @media only screen and (max-width:799px) and (min-width:600px) {
 
@@ -760,5 +744,3 @@ form{
 
 
 }
-
-/* FIN MEDIA QUERIS */
