@@ -5,7 +5,6 @@
 
 header{
     font-family: 'Roboto', sans-serif;
-    background-color:#000000;
     width:100%;
     height: 100px;
     display: flex;
@@ -14,6 +13,19 @@ header{
     position: fixed;
     z-index: 100;
 
+}
+
+.container-fluid {
+    background-image: radial-gradient(circle, rgba(241,226,166,1) 0%, rgba(255,204,92,0.9164040616246498) 38%, rgba(230,164,151,0.8463760504201681) 100%);
+}
+
+.menuFooter {
+    font-size: 15px;
+    margin-top:15px;
+}
+
+.offcanvas-title {
+    color:#F017B3;
 }
 
 .logo{
@@ -65,14 +77,10 @@ header{
     margin:10px;
 }
 
-.navBar{
-    margin: 5px;
-    text-align: center;
-}
-
 .colorNav{
-    color: #D6DBD5;
+    color: #000000;
     list-style: none;
+    font-weight: 10px;
 }
 
 
@@ -328,13 +336,13 @@ footer h4 {
 
 
 
-.container{
+.contenedorInfo{
     position: relative;
     height: 300px;
     width: 800px;
     margin:auto;
 } 
-.container .box1{
+.contenedorInfo .box1{
     position: relative;
     width: 400px;
     height: 400px;
@@ -347,7 +355,7 @@ footer h4 {
     border-radius: 10px;
 }
 
-.container .box1 .icon{
+.contenedorInfo .box1 .icon{
     position: absolute;
     top:0;
     left: 0;
@@ -357,7 +365,7 @@ footer h4 {
     z-index: 1;
 }
 
-.container .box1 .icon:hover{
+.contenedorInfo .box1 .icon:hover{
     top:20px;
     left: calc(50% - 40px);
     width: 80px;
@@ -365,7 +373,7 @@ footer h4 {
     border-radius:50%;
 }
 
-.container .box1 .icon .ic{
+.contenedorInfo .box1 .icon .ic{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -374,11 +382,11 @@ footer h4 {
     font-size: 100px;
 }
 
-.container .box1:hover .icon .ic{
+.contenedorInfo .box1:hover .icon .ic{
     height: 80px;
 }
 
-.container .box1 .content{
+.contenedorInfo .box1 .content{
     position: absolute;
     height: calc(100% - 10px);
     text-align: center;
@@ -386,35 +394,35 @@ footer h4 {
     top:100%;
     transition: 0.5s;
 }
-.container .box1:hover .content{
+.contenedorInfo .box1:hover .content{
     top:100px
 }
 
-.container .box1 .content h3{
+.contenedorInfo .box1 .content h3{
     margin: 0;
     padding: 0;
     color:black;
 }
 
-.container .box1 .content p{
+.contenedorInfo .box1 .content p{
     margin: 0;
     padding: 0;
     color:black;
 }
 
-.container .box1:nth-child(1) .icon{
+.contenedorInfo .box1:nth-child(1) .icon{
     background: #FA4D29;
 }
 
-.container .box1:nth-child(2) .icon{
+.contenedorInfo .box1:nth-child(2) .icon{
     background: #E0A577;
 }
 
-.container .box1:nth-child(3) .icon{
+.contenedorInfo .box1:nth-child(3) .icon{
     background: #ED729C;
 }
 
-.container .box1:nth-child(4) .icon{
+.contenedorInfo .box1:nth-child(4) .icon{
     background:#7B72ED;
 }
 .spanTitulo{
@@ -593,7 +601,7 @@ form{
         width: 800px;
     }
 
-    .container {
+    .contenedorInfo {
         margin-left: 50px;
     }
     #footerTrending {
@@ -675,7 +683,6 @@ form{
 
     header{
         font-family: 'Roboto', sans-serif;
-        background-color:#000000;
         display:inline-block;
         width:100%;
         height: 150px;
@@ -684,7 +691,12 @@ form{
         z-index: 100;
     }
 
-    .navbar ul li {
+    .barraNavegacion {
+        margin:0;
+        text-align: center;
+    }
+
+    .barraNavegacion ul li {
         margin: 0 0 10px 0;
         padding: 0;
     }
@@ -695,16 +707,10 @@ form{
         text-align: center;
     }
 
-    .navBar {
-        margin:0;
-        text-align: center;
-    }
 
     .colorNav {
         font-size: 20px;
     }
-
-    /* VISTA MOBILE CURSOS */
 
     .cursoImg2{
         width: 100%;

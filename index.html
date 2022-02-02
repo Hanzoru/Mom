@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <title>Mom</title>
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- BOOTSTRAP -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
         <link rel="stylesheet" href="./css/style.css">
         <!-- fuente ROBOTO -->
@@ -24,7 +27,58 @@
     </head>
 <body>
     <header>
-        <div>
+        <nav class="navbar navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <h1 class="logo">Mom</h1></a>
+                <ul class="barraNavegacion">
+                    <li><a href="./index.html" class="colorNav">Inicio</li></a>
+                    <li><a href="./paginas/trending.html"class="colorNav">Trending</li></a>
+                    <li><a href="./paginas/cursos.html"class="colorNav" >Cursos</li></a>
+                    <li><a href="./paginas/servicios.html"class="colorNav"><span class="servicios"></span>Servicios</li></a>
+                    <li><a href="./paginas/contacto.html" class="colorNav"><span class="contacto"></span>Contacto</li></a>
+                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h4 class="offcanvas-title" id="offcanvasNavbarLabel">Mom</h4>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./paginas/trending.html">Trending</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./paginas/cursos.html">Cursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./paginas/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./paginas/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Más
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">WhatsApp</a>  
+                                </li>
+                            </ul>
+                            </li>
+                        </ul>
+                        <h4><span class="menuFooter">© 2022 Mom´s - Todos los derechos reservados</span></h4>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- <div>
             <h1 class="logo">Mom</h1>
         </div>
         <nav class="navBar">
@@ -35,7 +89,7 @@
                 <li><a href="./paginas/servicios.html"class="colorNav"><span class="servicios"></span>Servicios</li></a>
                 <li><a href="./paginas/contacto.html" class="colorNav"><span class="contacto"></span>Contacto</li></a>
             </ul>
-        </nav>
+        </nav> -->
     </header>
     <main>
         <section class="carousel" id="fotosServicios">
@@ -54,7 +108,7 @@
             <img class="separadorPropiedades" src="./imagenes/Separador.png" alt="separador" >
         </div>
         <section data-aos="fade-up" data-aos-duration="2000" class="gridPadreQuienesSomos">
-            <div class="contenedor">
+            <div  class="contenedor">
                 <h2>Quienes somos</h2>
                 <h3><u>Nuestros profesionales</u></h3>
                 <div class=fotosProfesionales>
@@ -102,5 +156,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
