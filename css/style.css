@@ -26,6 +26,12 @@ header{
 .card {
     box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    background-image: linear-gradient(0deg, rgba(251,251,251,1) 0%, rgba(74,70,61,1) 100%);
+}
+
+.imgCard {
+    max-height: 400px;
+    object-fit: cover;
 }
 
 .contenedor-tarjetas {
