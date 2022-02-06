@@ -15,6 +15,45 @@ header{
 
 }
 
+.column {
+    margin: auto;
+    width: 30%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    border-radius: 10px;
+}
+
+.card {
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.contenedor-tarjetas {
+    padding: 0 16px;
+}
+
+.contenedor-tarjetas::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: gray;
+}
+
+.button{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color:white;
+    background-color:#000;
+    text-align: center;
+    cursor:pointer;
+    width: 100%;
+}
+
 .d-block w-100 {
     width: 150px;
     height: 150px;
@@ -110,7 +149,6 @@ body{
     text-align: center;
     margin: 10rem 3rem 3rem 3rem ;
     padding: 30px;
-    /* border: solid 1px #99A799; */
     border-radius: 4px;
     background-image: radial-gradient(circle, rgba(241,226,166,1) 0%, rgba(255,171,92,1) 35%, rgba(224,138,121,1) 100%);
     border-radius: 20px;
@@ -121,19 +159,10 @@ body{
 }
 
 
-.fotosProfesionales{
-    position:relative;
-    margin: auto;
-}
-
 /* Efecto Pulse*/
 
 .thumbnail{
     animation: pulse 1s infinite;
-    border-radius: 50%;
-    width: 200px;
-    margin: 0 15px 39px 0;
-    z-index: 100;
 }
 
 @keyframes pulse {
@@ -249,12 +278,6 @@ a{
     transition: all 0.5s;
     border-radius: 10px;
 } 
-
-
-
-.redes{
-    left: 400px;
-}
 
 .footTitle{
     margin-top: 50px;
@@ -570,12 +593,30 @@ form{
     filter: drop-shadow(10px 10px 16px black);
 }
 
+.contenedor-imagen {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centrado {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+
+.contenedor-imagen .centrado h3{
+    font-size:50px;
+    margin: 0 0 15rem 0;
+}
 
 .serviceText{
     text-align: center;
 }
 
 .imgFinService{
+    margin-top: 20px;
     position: relative;
     width: 100%;
     height: 450px;
@@ -654,6 +695,11 @@ form{
     p{
         text-align: start;
         font-size: 23px;
+    }
+
+    .column {
+        width: 100%;
+        display: block;
     }
 
     .videoDerecha{
