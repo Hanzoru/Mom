@@ -691,7 +691,16 @@ form{
     text-align: start;
 }
 
+.botonHamburguesa {
+    display: none;
+}
+
+
 @media only screen and (max-width:799px) and (min-width:600px) {
+
+.botonHamburguesa {
+    display: inline;
+}
 
 .barraNavegacion {
     display: none;
@@ -717,9 +726,15 @@ form{
     }
 }
 
+
 @media only screen and (max-width:599px) {
 
     /* VISTA MOBILE TRENDING */
+
+.botonHamburguesa {
+    display: inline;
+}
+
     .imagenEncabezado{
         display: none;
 
