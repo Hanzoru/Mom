@@ -3,6 +3,10 @@
     padding:0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header{
     font-family: 'Roboto', sans-serif;
     width:100%;
@@ -20,13 +24,12 @@ header{
     width: 30%;
     margin-bottom: 16px;
     padding: 0 8px;
-    border-radius: 10px;
 }
 
 .card {
     box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
     background-image: linear-gradient(0deg, rgba(251,251,251,1) 0%, rgba(74,70,61,1) 100%);
+    border-radius: 10px;
 }
 
 .imgCard {
@@ -144,6 +147,8 @@ li{
 a:hover,
 a:focus {
     background-size: 100% 2px;
+    color:#000;
+    font-weight: 10;
 }
 
 body{
@@ -567,15 +572,6 @@ form{
     height: 20rem;
 }
 
-.gridPadreServicios{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: auto;
-    grid-template-areas:
-    "imagen1 imagen2 imagen3"
-    ;
-}
-
 .gridPadrePrecios{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -605,6 +601,14 @@ form{
     color: white;
 }
 
+.imagenServicioUñas {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
 .centrado {
     position: absolute;
     top:50%;
@@ -629,6 +633,47 @@ form{
     object-fit: cover;
 }
 
+.introServicios {
+    margin: 80px 0 50px 0;
+}
+
+.imagenServicio {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.botonServicio{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color:#000;
+    background-image: linear-gradient(0deg, rgba(230,207,230,1) 0%, rgba(240,101,244,1) 100%);
+    text-align: center;
+    cursor:pointer;
+    width: 20%;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+#colorUña {
+    color: #000;
+}
+
+.abajo-izquierda {
+    position: absolute;
+    bottom: 8px;
+    left:16px;
+    border-bottom: 10px double rgba(164,20,20,0.49);
+    border-radius: 26px;
+}
+
+.abajo-izquierda h4{
+    font-size: 30px;
+}
 
 .contenidoPrecios{
     display: grid;
@@ -636,6 +681,15 @@ form{
     grid-template-rows: auto auto auto;
 } 
 
+.precios h2 {
+    margin: 100px 0 0 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.precios h3 {
+    text-align: start;
+}
 
 @media only screen and (max-width:799px) and (min-width:600px) {
 
@@ -716,7 +770,6 @@ form{
 
     .thumbnail{
         animation: pulse 1s infinite;
-        border-radius: 50%;
         width: 200px;
         margin: 0 15px 39px 0;
         z-index: 1000;
@@ -784,6 +837,10 @@ form{
         display: none;
     }
 
+    footer h4 {
+        font-size: 20px;
+    }
+
     .gridPadreServicios {
         overflow-x: scroll;
     }
@@ -792,7 +849,18 @@ form{
         overflow-x: scroll;
     }
 
-
-
+    /* Servicios */
+.botonServicio{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color:#000;
+    background-image: linear-gradient(0deg, rgba(230,207,230,1) 0%, rgba(240,101,244,1) 100%);
+    text-align: center;
+    width: 20%;
+    margin-top: 15px;
+    font-size: 15px;
+}
 
 }
