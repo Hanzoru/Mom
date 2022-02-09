@@ -97,9 +97,9 @@ nav .container-fluid {
     font-weight: 10px; }
   nav .container-fluid .botonMenu {
     display: none; }
-    nav .container-fluid .botonMenu .offcanvas offcanvas-end .offcanvas-header .offcanvas-title {
+    nav .container-fluid .botonMenu .offcanvas-end .offcanvas-header .offcanvas-title {
       color: #dd20a8; }
-    nav .container-fluid .botonMenu .offcanvas offcanvas-end .offcanvas-header .menuFooter {
+    nav .container-fluid .botonMenu .offcanvas-end .offcanvas-header .menuFooter {
       font-size: 15px;
       margin-top: 15px; }
 
