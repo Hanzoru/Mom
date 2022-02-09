@@ -1,0 +1,201 @@
+nav {
+
+    .container-fluid {
+        background-image: radial-gradient(circle, rgba(241,226,166,1) 0%, rgba(255,204,92,0.9164040616246498) 38%, rgba(230,164,151,0.8463760504201681) 100%);
+        
+        .logo{
+        margin-left: 50px;
+        color: $ColorLogo;
+        font-family:$FuentePrincipal;
+        }
+
+        ul{
+
+            li{
+                color: #000000;
+                list-style: none;
+                font-weight: 10px;
+            }
+        }
+        .botonMenu {
+            display: none;
+
+            .offcanvas offcanvas-end {
+
+                .offcanvas-header {
+                    
+                    .offcanvas-title {
+                        color:$ColorLogo
+                    }
+                    .menuFooter{
+                        font-size: 15px;
+                        margin-top:15px;
+                    }    
+                }
+            }
+        }
+    }
+}
+
+main {
+
+    .carousel{
+        display: flex;
+        align-items: center;
+
+        a{
+            font-size: 40px;
+            margin:10px;
+        }
+
+        .galeria {
+
+            .galeria::-webkit-scrollbar{
+                width: 12px; 
+            }
+            .galeria::-webkit-scrollbar-track {
+                background: #cfced1;
+                border-radius: 6px; 
+            }
+
+            .galeria::-webkit-scrollbar-thumb {
+                background-color: #838285;    
+                border-radius: 20px;      
+                border: 3px solid #FCFAFF;
+            }
+        
+            .galeriaFotos{
+                width: 350px;
+                height: 350px;
+                object-fit: cover;
+                margin-left: 7%;
+                margin-bottom: 3%;
+            }
+        }
+    }
+    .separador {
+        position: relative;
+        margin: 10vh 0 5vh 0;
+        text-align: center;
+        transform: rotate(180deg);
+    }
+
+    .gridPadreQuienesSomos {
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:"parrafo1";
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        .contenedor {
+            text-align: center;
+            margin: 10rem 3rem 3rem 3rem ;
+            padding: 30px;
+            border-radius: 4px;
+            background-image: radial-gradient(circle, rgba(241,226,166,1) 0%, rgba(255,171,92,1) 35%, rgba(224,138,121,1) 100%);
+            border-radius: 20px;
+            filter: drop-shadow(5px 10px 5px black);
+            transition: all 0.5s;
+            height: auto;
+
+            .row {
+
+                @keyframes pulse {
+                    from {
+                        box-shadow: 0 0 0 0 #e18bce;
+                    }
+                    to {
+                        box-shadow: 0 0 0 15px rgba(255, 122, 0, 0);
+                    }
+                
+                }
+
+                .column{
+                    margin: auto;
+                    width: 30%;
+                    margin-bottom: 16px;
+                    padding: 0 8px;
+
+                    .card, .thumbnail{
+                        box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2);
+                        background-image: linear-gradient(0deg, rgba(251,251,251,1) 0%, rgba(74,70,61,1) 100%);
+                        border-radius: 10px;
+                        animation: pulse 1s infinite;
+
+                        .imgCard {
+                            max-height: 400px;
+                            object-fit: cover;
+                        }
+                        .contenedorTarjetas {
+                            padding: 0 16px;
+
+                            .contenedorTarjetas:after, row::after{
+                                content: "";
+                                clear: both;
+                                display: table;
+                            }
+                            .title{
+                                color: $ColorTarjeta;
+                            }
+                            .buttonCard {
+                                border: none;
+                                outline: 0;
+                                display: inline-block;
+                                padding: 8px;
+                                color:white;
+                                background-color:#000;
+                                text-align: center;
+                                cursor:pointer;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .separador2{
+        text-align: center;
+        position: relative;
+    }
+
+    .gridPadreNosotros{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:auto auto auto;
+        grid-template-areas: 
+        "textoVideo videoFacebook";
+
+        .contenedor {
+
+            .videoDerecha{
+                float: right;
+                width: 400px;
+                margin: 0 0 10px 10px;
+                filter: drop-shadow(16px 16px 10px black);
+                transition: all 0.5s;
+                border-radius: 10px;
+            }
+            .videoText{
+                margin-top: 40px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+footer{
+    .gridPadreFooter {
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "instagram facebook";
+
+    .instagram{
+        grid-area: instagram;
+    }
+    .facebook{
+        grid-area: facebook;
+    }
+    }
+}

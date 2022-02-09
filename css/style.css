@@ -7,6 +7,11 @@ html {
     scroll-behavior: smooth;
 }
 
+body{
+    font-family: 'Pushster', cursive;
+    background-color:#FAEBC3;
+}
+
 header{
     font-family: 'Roboto', sans-serif;
     width:100%;
@@ -37,11 +42,11 @@ header{
     object-fit: cover;
 }
 
-.contenedor-tarjetas {
+.contenedorTarjetas {
     padding: 0 16px;
 }
 
-.contenedor-tarjetas::after, .row::after {
+.contenedorTarjetas::after, .row::after {
     content: "";
     clear: both;
     display: table;
@@ -51,7 +56,7 @@ header{
     color: gray;
 }
 
-.button{
+.buttonCard{
     border: none;
     outline: 0;
     display: inline-block;
@@ -60,12 +65,7 @@ header{
     background-color:#000;
     text-align: center;
     cursor:pointer;
-    width: 100%;
-}
-
-.d-block w-100 {
-    width: 150px;
-    height: 150px;
+    width: 50%;
 }
 
 .container-fluid {
@@ -137,13 +137,13 @@ header{
     font-weight: 10px;
 }
 
-
+/* Pasado a scss General */
 li{
     display: inline;
     padding: 20px;
     border-radius: 10%;
 }
-
+/* Pasado a scss */
 a:hover,
 a:focus {
     background-size: 100% 2px;
@@ -151,10 +151,6 @@ a:focus {
     font-weight: 10;
 }
 
-body{
-    font-family: 'Pushster', cursive;
-    background-color:#FAEBC3;
-}
 
 .contenedor{
     text-align: center;
@@ -209,11 +205,6 @@ gridPadreNosotros{
     text-align: left;
 }
 
-
-.clearBoth {
-    clear:both;
-}
-
 .separador{
     position: relative;
     margin: 10vh 0 5vh 0;
@@ -228,11 +219,6 @@ gridPadreNosotros{
     grid-template-areas:"parrafo1";
     margin-top: 50px;
     margin-bottom: 50px;
-}
-
-.parrafo1 {
-    grid-area: parrafo1;
-    background-color: black
 }
 
 h2{
@@ -280,7 +266,7 @@ a{
     margin-top: 40px;
     margin-bottom: 50px;
 } 
-
+/* Pasado a Scss */
 .videoDerecha{
     float: right;
     width: 400px;
@@ -289,6 +275,7 @@ a{
     transition: all 0.5s;
     border-radius: 10px;
 } 
+/* Pasado a Scss */
 
 .footTitle{
     margin-top: 50px;
@@ -297,12 +284,6 @@ a{
     padding: 10px;
 }
 
-.box{
-    width: 100%;
-    height: 3px;
-    background-color: black;
-    position: absolute;
-}
 
 gridPadreFooter{
     display: grid;
@@ -359,7 +340,7 @@ footer h4 {
     width: 90px;
 }
 
-
+/* Inicio Trending */
 .imagenEncabezado{
     height: 30rem;
     object-fit: cover; 
@@ -691,14 +672,14 @@ form{
     text-align: start;
 }
 
-.botonHamburguesa {
+.botonMenu {
     display: none;
 }
 
 
 @media only screen and (max-width:799px) and (min-width:600px) {
 
-.botonHamburguesa {
+.botonMenu {
     display: inline;
 }
 
@@ -731,7 +712,7 @@ form{
 
     /* VISTA MOBILE TRENDING */
 
-.botonHamburguesa {
+.botonMenu {
     display: inline;
 }
 

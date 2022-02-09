@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: 'Pushster', cursive;
+  background-color: #FAEBC3; }
+
+li {
+  display: inline;
+  padding: 20px;
+  border-radius: 10%; }
+
+a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 24px;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s; }
+  a:hover, a:focus {
+    background-size: 100% 2px;
+    color: #000;
+    font-weight: 10; }
+
+.logoWhatsapp {
+  position: sticky;
+  height: 10vh;
+  float: left;
+  bottom: 5vh;
+  padding: 0 4vh 0 0; }
+  .logoWhatsapp a {
+    background-position: 0% 0%;
+    background-size: 0% 2px;
+    margin-left: 2vh; }
+
+.logoWhatsappPropiedades {
+  width: 90px; }
+
+h2 {
+  text-align: start;
+  padding-left: 1%;
+  margin-top: 3%;
+  font-size: 30px;
+  margin-bottom: 2rem; }
+
+h3 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 1rem 0 1rem 0;
+  font-size: 25px; }
+
+footer {
+  background-color: #FEF5ED;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  footer ul li {
+    list-style-type: none; }
+    footer ul li a {
+      margin-left: 1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #000000;
+      font-family: 'Roboto', sans-serif;
+      font-size: 17px; }
+  footer h4 {
+    font-family: "Pushster", cursive; }
+
+nav .container-fluid {
+  background-image: radial-gradient(circle, #f1e2a6 0%, rgba(255, 204, 92, 0.916404) 38%, rgba(230, 164, 151, 0.846376) 100%); }
+  nav .container-fluid .logo {
+    margin-left: 50px;
+    color: #dd20a8;
+    font-family: "Pushster", cursive; }
+  nav .container-fluid ul li {
+    color: #000000;
+    list-style: none;
+    font-weight: 10px; }
+  nav .container-fluid .botonMenu {
+    display: none; }
+    nav .container-fluid .botonMenu .offcanvas offcanvas-end .offcanvas-header .offcanvas-title {
+      color: #dd20a8; }
+    nav .container-fluid .botonMenu .offcanvas offcanvas-end .offcanvas-header .menuFooter {
+      font-size: 15px;
+      margin-top: 15px; }
+
+main .carousel {
+  display: flex;
+  align-items: center; }
+  main .carousel a {
+    font-size: 40px;
+    margin: 10px; }
+  main .carousel .galeria .galeria::-webkit-scrollbar {
+    width: 12px; }
+  main .carousel .galeria .galeria::-webkit-scrollbar-track {
+    background: #cfced1;
+    border-radius: 6px; }
+  main .carousel .galeria .galeria::-webkit-scrollbar-thumb {
+    background-color: #838285;
+    border-radius: 20px;
+    border: 3px solid #FCFAFF; }
+  main .carousel .galeria .galeriaFotos {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin-left: 7%;
+    margin-bottom: 3%; }
+
+main .separador {
+  position: relative;
+  margin: 10vh 0 5vh 0;
+  text-align: center;
+  transform: rotate(180deg); }
+
+main .gridPadreQuienesSomos {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "parrafo1";
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  main .gridPadreQuienesSomos .contenedor {
+    text-align: center;
+    margin: 10rem 3rem 3rem 3rem;
+    padding: 30px;
+    border-radius: 4px;
+    background-image: radial-gradient(circle, #f1e2a6 0%, #ffab5c 35%, #e08a79 100%);
+    border-radius: 20px;
+    filter: drop-shadow(5px 10px 5px black);
+    transition: all 0.5s;
+    height: auto; }
+
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 0 0 #e18bce; }
+  to {
+    box-shadow: 0 0 0 15px rgba(255, 122, 0, 0); } }
+    main .gridPadreQuienesSomos .contenedor .row .column {
+      margin: auto;
+      width: 30%;
+      margin-bottom: 16px;
+      padding: 0 8px; }
+      main .gridPadreQuienesSomos .contenedor .row .column .card, main .gridPadreQuienesSomos .contenedor .row .column .thumbnail {
+        box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2);
+        background-image: linear-gradient(0deg, #fbfbfb 0%, #4a463d 100%);
+        border-radius: 10px;
+        animation: pulse 1s infinite; }
+        main .gridPadreQuienesSomos .contenedor .row .column .card .imgCard, main .gridPadreQuienesSomos .contenedor .row .column .thumbnail .imgCard {
+          max-height: 400px;
+          object-fit: cover; }
+        main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas, main .gridPadreQuienesSomos .contenedor .row .column .thumbnail .contenedorTarjetas {
+          padding: 0 16px; }
+          main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas .contenedorTarjetas:after, main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas row::after, main .gridPadreQuienesSomos .contenedor .row .column .thumbnail .contenedorTarjetas .contenedorTarjetas:after, main .gridPadreQuienesSomos .contenedor .row .column .thumbnail .contenedorTarjetas row::after {
+            content: "";
+            clear: both;
+            display: table; }
+          main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas .title, main .gridPadreQuienesSomos .contenedor .row .column .thumbnail .contenedorTarjetas .title {
+            color: gray; }
+          main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas .buttonCard, main .gridPadreQuienesSomos .contenedor .row .column .thumbnail .contenedorTarjetas .buttonCard {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%; }
+
+main .separador2 {
+  text-align: center;
+  position: relative; }
+
+main .gridPadreNosotros {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "textoVideo videoFacebook"; }
+  main .gridPadreNosotros .contenedor .videoDerecha {
+    float: right;
+    width: 400px;
+    margin: 0 0 10px 10px;
+    filter: drop-shadow(16px 16px 10px black);
+    transition: all 0.5s;
+    border-radius: 10px; }
+  main .gridPadreNosotros .contenedor .videoText {
+    margin-top: 40px;
+    margin-bottom: 50px; }
+
+footer .gridPadreFooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "instagram facebook"; }
+  footer .gridPadreFooter .instagram {
+    grid-area: instagram; }
+  footer .gridPadreFooter .facebook {
+    grid-area: facebook; }
