@@ -1,3 +1,9 @@
+.icon-instagram {
+  color: #C227A0; }
+
+.icon-facebook {
+  color: #3c27c2; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -38,20 +44,6 @@ a {
     color: #000;
     font-weight: 10; }
 
-.logoWhatsapp {
-  position: sticky;
-  height: 10vh;
-  float: left;
-  bottom: 5vh;
-  padding: 0 4vh 0 0; }
-  .logoWhatsapp a {
-    background-position: 0% 0%;
-    background-size: 0% 2px;
-    margin-left: 2vh; }
-
-.logoWhatsappPropiedades {
-  width: 90px; }
-
 h2 {
   text-align: start;
   padding-left: 1%;
@@ -80,17 +72,17 @@ footer {
       text-transform: uppercase;
       font-weight: bold;
       color: #000000;
-      font-family: 'Roboto', sans-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 17px; }
-  footer h4 {
+  footer h2 {
     font-family: "Pushster", cursive; }
 
 nav .container-fluid {
   background-image: radial-gradient(circle, #f1e2a6 0%, rgba(255, 204, 92, 0.916404) 38%, rgba(230, 164, 151, 0.846376) 100%); }
   nav .container-fluid .logo {
     margin-left: 50px;
-    color: #dd20a8;
-    font-family: "Pushster", cursive; }
+    font-family: "Pushster", cursive;
+    color: #dd20a8; }
   nav .container-fluid ul li {
     color: #000000;
     list-style: none;
@@ -104,26 +96,16 @@ nav .container-fluid {
       margin-top: 15px; }
 
 main .carousel {
-  display: flex;
-  align-items: center; }
-  main .carousel a {
-    font-size: 40px;
-    margin: 10px; }
-  main .carousel .galeria .galeria::-webkit-scrollbar {
-    width: 12px; }
-  main .carousel .galeria .galeria::-webkit-scrollbar-track {
-    background: #cfced1;
-    border-radius: 6px; }
-  main .carousel .galeria .galeria::-webkit-scrollbar-thumb {
-    background-color: #838285;
-    border-radius: 20px;
-    border: 3px solid #FCFAFF; }
-  main .carousel .galeria .galeriaFotos {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    margin-left: 7%;
-    margin-bottom: 3%; }
+  object-fit: cover; }
+  main .carousel .carousel-control-prev {
+    color: #000000; }
+  main .carousel .carousel-item {
+    max-height: 700px; }
+
+main .carousel-inner {
+  object-fit: cover;
+  width: 80%;
+  margin: auto; }
 
 main .separador {
   position: relative;
@@ -158,23 +140,24 @@ main .gridPadreQuienesSomos {
       width: 30%;
       margin-bottom: 16px;
       padding: 0 8px; }
-      main .gridPadreQuienesSomos .contenedor .row .column .card, main .gridPadreQuienesSomos .contenedor .row .column .thumbnail {
+      main .gridPadreQuienesSomos .contenedor .row .column .card, main .gridPadreQuienesSomos .contenedor .row .column .card .thumbnail {
         box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2);
         background-image: linear-gradient(0deg, #fbfbfb 0%, #4a463d 100%);
-        border-radius: 10px;
-        animation: pulse 1s infinite; }
-        main .gridPadreQuienesSomos .contenedor .row .column .card .imgCard, main .gridPadreQuienesSomos .contenedor .row .column .thumbnail .imgCard {
+        border-radius: 10px; }
+        main .gridPadreQuienesSomos .contenedor .row .column .card .thumbnail {
+          animation: pulse 1s infinite; }
+        main .gridPadreQuienesSomos .contenedor .row .column .card .imgCard {
           max-height: 400px;
           object-fit: cover; }
-        main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas, main .gridPadreQuienesSomos .contenedor .row .column .thumbnail .contenedorTarjetas {
+        main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas {
           padding: 0 16px; }
-          main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas .contenedorTarjetas:after, main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas row::after, main .gridPadreQuienesSomos .contenedor .row .column .thumbnail .contenedorTarjetas .contenedorTarjetas:after, main .gridPadreQuienesSomos .contenedor .row .column .thumbnail .contenedorTarjetas row::after {
+          main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas .contenedorTarjetas:after, main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas row::after {
             content: "";
             clear: both;
             display: table; }
-          main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas .title, main .gridPadreQuienesSomos .contenedor .row .column .thumbnail .contenedorTarjetas .title {
+          main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas .title {
             color: gray; }
-          main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas .buttonCard, main .gridPadreQuienesSomos .contenedor .row .column .thumbnail .contenedorTarjetas .buttonCard {
+          main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas .buttonCard {
             border: none;
             outline: 0;
             display: inline-block;
@@ -183,7 +166,7 @@ main .gridPadreQuienesSomos {
             background-color: #000;
             text-align: center;
             cursor: pointer;
-            width: 100%; }
+            width: 50%; }
 
 main .separador2 {
   text-align: center;
@@ -213,3 +196,17 @@ footer .gridPadreFooter {
     grid-area: instagram; }
   footer .gridPadreFooter .facebook {
     grid-area: facebook; }
+
+.logoWhatsapp {
+  position: sticky;
+  height: 10vh;
+  float: left;
+  bottom: 5vh;
+  padding: 0 4vh 0 0; }
+  .logoWhatsapp a {
+    background-position: 0% 0%;
+    background-size: 0% 2px;
+    margin-left: 2vh; }
+
+.logoWhatsappPropiedades {
+  width: 90px; }

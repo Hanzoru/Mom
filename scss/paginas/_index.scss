@@ -5,8 +5,8 @@ nav {
         
         .logo{
         margin-left: 50px;
-        color: $ColorLogo;
         font-family:$FuentePrincipal;
+        color: $ColorLogo;
         }
 
         ul{
@@ -40,38 +40,21 @@ nav {
 main {
 
     .carousel{
-        display: flex;
-        align-items: center;
+        object-fit:cover;
 
-        a{
-            font-size: 40px;
-            margin:10px;
+        .carousel-control-prev{
+            color: #000000;
         }
 
-        .galeria {
-
-            .galeria::-webkit-scrollbar{
-                width: 12px; 
-            }
-            .galeria::-webkit-scrollbar-track {
-                background: #cfced1;
-                border-radius: 6px; 
-            }
-
-            .galeria::-webkit-scrollbar-thumb {
-                background-color: #838285;    
-                border-radius: 20px;      
-                border: 3px solid #FCFAFF;
-            }
-        
-            .galeriaFotos{
-                width: 350px;
-                height: 350px;
-                object-fit: cover;
-                margin-left: 7%;
-                margin-bottom: 3%;
-            }
+        .carousel-item {
+            max-height: 700px;
         }
+    }
+
+    .carousel-inner {
+        object-fit: cover;
+        width: 80%;
+        margin: auto;
     }
     .separador {
         position: relative;
@@ -88,15 +71,7 @@ main {
         margin-bottom: 50px;
 
         .contenedor {
-            text-align: center;
-            margin: 10rem 3rem 3rem 3rem ;
-            padding: 30px;
-            border-radius: 4px;
-            background-image: radial-gradient(circle, rgba(241,226,166,1) 0%, rgba(255,171,92,1) 35%, rgba(224,138,121,1) 100%);
-            border-radius: 20px;
-            filter: drop-shadow(5px 10px 5px black);
-            transition: all 0.5s;
-            height: auto;
+            @include contenedor;
 
             .row {
 
@@ -116,11 +91,16 @@ main {
                     margin-bottom: 16px;
                     padding: 0 8px;
 
-                    .card, .thumbnail{
+                    .card {
                         box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2);
                         background-image: linear-gradient(0deg, rgba(251,251,251,1) 0%, rgba(74,70,61,1) 100%);
                         border-radius: 10px;
-                        animation: pulse 1s infinite;
+                        
+
+                        .thumbnail{
+                            @extend .card;
+                            animation: pulse 1s infinite;
+                        }
 
                         .imgCard {
                             max-height: 400px;
@@ -138,15 +118,7 @@ main {
                                 color: $ColorTarjeta;
                             }
                             .buttonCard {
-                                border: none;
-                                outline: 0;
-                                display: inline-block;
-                                padding: 8px;
-                                color:white;
-                                background-color:#000;
-                                text-align: center;
-                                cursor:pointer;
-                                width: 100%;
+                                @include boton-tarjeta;
                             }
                         }
                     }
@@ -168,12 +140,7 @@ main {
         .contenedor {
 
             .videoDerecha{
-                float: right;
-                width: 400px;
-                margin: 0 0 10px 10px;
-                filter: drop-shadow(16px 16px 10px black);
-                transition: all 0.5s;
-                border-radius: 10px;
+                @include float-right
             }
             .videoText{
                 margin-top: 40px;
@@ -198,4 +165,22 @@ footer{
         grid-area: facebook;
     }
     }
+}
+
+.logoWhatsapp {
+    position: sticky;
+    height: 10vh;
+    float: left;
+    bottom: 5vh;
+    padding: 0 4vh 0 0;
+
+    a{
+        background-position: 0% 0%;
+        background-size: 0% 2px;
+        margin-left: 2vh;
+    }
+}
+
+.logoWhatsappPropiedades {
+    width: 90px;
 }

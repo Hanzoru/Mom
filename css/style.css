@@ -120,15 +120,24 @@ header{
     margin-left: 7%;
     margin-bottom: 3%;
 }
-
-.carousel{
+/* BORRAR PARA HACER FUNCIONAL CARRUSEL */
+/* .carousel{
     display: flex;
     align-items: center;
+} */
+
+.carousel {
+    object-fit: cover;
 }
 
-.carousel a {
-    font-size: 40px;
-    margin:10px;
+.carousel-item {
+    max-height: 700px;
+}
+
+.carousel-inner {
+    object-fit: cover;
+    width: 80%;
+    margin: auto;
 }
 
 .colorNav{
@@ -287,10 +296,11 @@ a{
 
 gridPadreFooter{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
-    "instagram facebook";
+    "instagram"
+    "facebook";
 }
 
 .instagram{
@@ -299,6 +309,14 @@ gridPadreFooter{
 
 .facebook{
     grid-area: facebook;
+}
+
+.icon-instagram:active {
+    color: #C227A0;
+}
+
+.icon-facebook:active {
+    color: #C227A0;
 }
 
 footer{
@@ -323,7 +341,7 @@ footer ul li a {
     font-size: 17px;
 }
 
-footer h4 {
+footer h2 {
     font-family: 'Roboto', sans-serif;
 }
 

@@ -1,4 +1,86 @@
 $ColorBase: #FAEBC3;
+
 $ColorLogo: #dd20a8;
+
 $FuentePrincipal:'Pushster', cursive;
-$ColorTarjeta:gray
+
+$FuenteSecundaria:'Roboto', sans-serif;
+
+$ColorTarjeta:gray;
+
+$redesSociales: (
+    instagram: #C227A0,
+    facebook: #3c27c2
+);
+
+@each $redSocial, $color in $redesSociales{
+    .icon-#{$redSocial}{
+        color:$color;
+    }
+}
+
+@mixin h2-propiedades {
+    text-align: start;
+    padding-left: 1%;
+    margin-top:3%;
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+@mixin h3-propiedades {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 1rem 0 1rem 0;
+    font-size: 25px;
+}
+
+@mixin float-right {
+    float: right;
+    width: 400px;
+    margin: 0 0 10px 10px;
+    filter: drop-shadow(16px 16px 10px black);
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+@mixin boton-tarjeta {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color:white;
+    background-color:#000;
+    text-align: center;
+    cursor:pointer;
+    width: 50%;
+}
+
+@mixin contenedor {
+    text-align: center;
+    margin: 10rem 3rem 3rem 3rem ;
+    padding: 30px;
+    border-radius: 4px;
+    background-image: radial-gradient(circle, rgba(241,226,166,1) 0%, rgba(255,171,92,1) 35%, rgba(224,138,121,1) 100%);
+    border-radius: 20px;
+    filter: drop-shadow(5px 10px 5px black);
+    transition: all 0.5s;
+    height: auto;
+}
+
+@mixin buttonCard{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color:white;
+    background-color:#000;
+    text-align: center;
+    cursor:pointer;
+    width: 50%;
+}
+
+$FondoFooter: (
+    blanco-crema:#FEF5ED,
+    negro:#0000
+)

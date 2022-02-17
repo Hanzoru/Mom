@@ -1,0 +1,18 @@
+Cambios realizados {
+
+    Agrego Mixins a propiedades generales como: 
+        - h2
+        - h3
+        - float-right (imagen flotante lateral del texto)
+        - botones de tarjetas 
+        - contenedor (caja contenedora de contenidos)
+    
+    Agrego mapas a:
+        - iconos de redes sociales $redesSociales (utilizo un each para hacer un pequeño bucle)
+        - invoco map get en color de background footer (general.scss)
+
+    Agrego keywords:
+    "uñas esculpidas, pestañas, volumen ruso, diseño de uñas, salon de belleza, pedicuría, centro de belleza, depilación"
+
+    Cambié titulo h4 de footer a h3. 
+}   
