@@ -29,6 +29,15 @@ li {
     border-radius: 10%;
 }
 
+p{
+    color: #090A13;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    padding-left: 1%;
+    padding-bottom: 20px;
+}
+
 a{
     text-decoration: none;
     text-align: center;
@@ -77,4 +86,8 @@ footer {
     h2 {
         font-family: $FuentePrincipal;
     }
+}
+
+.contenedor {
+    @include contenedor
 }

@@ -285,13 +285,14 @@ a{
 } 
 /* Pasado a Scss */
 
-.footTitle{
+/* QUITAR DE CSS */
+/* .footTitle{
     margin-top: 50px;
     margin-bottom: 50px;
     display: inline-block;
     padding: 10px;
-}
-
+} */
+/* QUITAR DE CSS */
 
 gridPadreFooter{
     display: grid;

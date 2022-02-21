@@ -10,7 +10,6 @@ nav {
         }
 
         ul{
-
             li{
                 color: #000000;
                 list-style: none;
@@ -73,6 +72,7 @@ main {
         .contenedor {
             @include contenedor;
 
+
             .row {
 
                 @keyframes pulse {
@@ -109,13 +109,17 @@ main {
                         .contenedorTarjetas {
                             padding: 0 16px;
 
-                            .contenedorTarjetas:after, row::after{
+                            
+                            .contenedorTarjetas:after, .row::after{
                                 content: "";
                                 clear: both;
                                 display: table;
                             }
+
+                            
                             .title{
                                 color: $ColorTarjeta;
+                                @include h2-propiedades
                             }
                             .buttonCard {
                                 @include boton-tarjeta;

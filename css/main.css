@@ -30,6 +30,14 @@ li {
   padding: 20px;
   border-radius: 10%; }
 
+p {
+  color: #090A13;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  padding-left: 1%;
+  padding-bottom: 20px; }
+
 a {
   text-decoration: none;
   text-align: center;
@@ -76,6 +84,17 @@ footer {
       font-size: 17px; }
   footer h2 {
     font-family: "Pushster", cursive; }
+
+.contenedor {
+  text-align: center;
+  margin: 10rem 3rem 3rem 3rem;
+  padding: 30px;
+  border-radius: 4px;
+  background-image: radial-gradient(circle, #f1e2a6 0%, #ffab5c 35%, #e08a79 100%);
+  border-radius: 20px;
+  filter: drop-shadow(5px 10px 5px black);
+  transition: all 0.5s;
+  height: auto; }
 
 nav .container-fluid {
   background-image: radial-gradient(circle, #f1e2a6 0%, rgba(255, 204, 92, 0.916404) 38%, rgba(230, 164, 151, 0.846376) 100%); }
@@ -151,12 +170,17 @@ main .gridPadreQuienesSomos {
           object-fit: cover; }
         main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas {
           padding: 0 16px; }
-          main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas .contenedorTarjetas:after, main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas row::after {
+          main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas .contenedorTarjetas:after, main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas .row::after {
             content: "";
             clear: both;
             display: table; }
           main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas .title {
-            color: gray; }
+            color: gray;
+            text-align: start;
+            padding-left: 1%;
+            margin-top: 3%;
+            font-size: 30px;
+            margin-bottom: 2rem; }
           main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas .buttonCard {
             border: none;
             outline: 0;
@@ -210,3 +234,84 @@ footer .gridPadreFooter {
 
 .logoWhatsappPropiedades {
   width: 90px; }
+
+section .imagenEncabezado {
+  height: 30rem;
+  object-fit: cover;
+  width: 100%;
+  border-bottom: 3px solid black; }
+
+section .tituloNovedades {
+  text-align: center;
+  font-size: 2rem;
+  z-index: 2; }
+
+section .contenedorInfo {
+  position: relative;
+  height: 300px;
+  width: 800px;
+  margin: auto;
+  /* .box1:hover{
+            height: 80px;
+        } */ }
+  section .contenedorInfo .box1:nth-child(1) .icon {
+    background: #FA4D29; }
+  section .contenedorInfo .box1:nth-child(2) .icon {
+    background: #FA4D29; }
+  section .contenedorInfo .box1:nth-child(3) .icon {
+    background: #FA4D29; }
+  section .contenedorInfo .box1:nth-child(4) .icon {
+    background: #7B72ED; }
+  section .contenedorInfo .box1 {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: #C5E3F0;
+    float: left;
+    margin: 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+    left: 9rem;
+    border-radius: 10px;
+    /* .box1:hover{
+                top:100px
+            } */ }
+    section .contenedorInfo .box1 .content {
+      position: absolute;
+      height: calc(100% - 10px);
+      text-align: center;
+      padding: 20px;
+      top: 100%;
+      transition: 0.5s; }
+      section .contenedorInfo .box1 .content .spanTitulo {
+        color: #C227A0;
+        font-size: 25px; }
+      section .contenedorInfo .box1 .content h3 {
+        margin: 0;
+        padding: 0;
+        color: black; }
+      section .contenedorInfo .box1 .content p {
+        margin: 0;
+        padding: 0;
+        color: black; }
+    section .contenedorInfo .box1 .icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: 0.5s;
+      z-index: 1; }
+      section .contenedorInfo .box1 .icon .ic {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 0.5s;
+        font-size: 100px; }
+    section .contenedorInfo .box1 .icon:hover {
+      top: 20px;
+      left: calc(50% - 40px);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%; }
