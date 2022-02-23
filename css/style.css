@@ -65,7 +65,7 @@ header{
     background-color:#000;
     text-align: center;
     cursor:pointer;
-    width: 50%;
+    width: 100%;
 }
 
 .container-fluid {
@@ -767,6 +767,17 @@ input:hover {
     }
 
     /* VISTA MOBILE INDEX */
+    buttonCard{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color:white;
+    background-color:#000;
+    text-align: center;
+    cursor:pointer;
+    width: 80%;
+}
 
     .separadorPropiedades {
         width: 300px ;
