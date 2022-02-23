@@ -39,6 +39,7 @@ p {
   padding-bottom: 20px; }
 
 a {
+  color: #000000;
   text-decoration: none;
   text-align: center;
   font-size: 24px;
@@ -250,10 +251,7 @@ section .contenedorInfo {
   position: relative;
   height: 300px;
   width: 800px;
-  margin: auto;
-  /* .box1:hover{
-            height: 80px;
-        } */ }
+  margin: auto; }
   section .contenedorInfo .box1:nth-child(1) .icon {
     background: #FA4D29; }
   section .contenedorInfo .box1:nth-child(2) .icon {
@@ -272,10 +270,7 @@ section .contenedorInfo {
     box-sizing: border-box;
     overflow: hidden;
     left: 9rem;
-    border-radius: 10px;
-    /* .box1:hover{
-                top:100px
-            } */ }
+    border-radius: 10px; }
     section .contenedorInfo .box1 .content {
       position: absolute;
       height: calc(100% - 10px);
@@ -315,3 +310,43 @@ section .contenedorInfo {
       width: 80px;
       height: 80px;
       border-radius: 50%; }
+
+main .gridPadreContacto {
+  display: grid;
+  background-image: url(https://st4.depositphotos.com/16122460/i/600/depositphotos_264157144-stock-photo-beautiful-woman-with-stylish-nail.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "formulario"; }
+  main .gridPadreContacto form {
+    position: relative;
+    text-align: center;
+    margin-bottom: 200px;
+    font-size: 22px;
+    color: #DB478F;
+    bottom: 50px;
+    top: 150px; }
+    main .gridPadreContacto form .campo {
+      display: block;
+      width: 50%;
+      padding: 10px;
+      margin: 10px auto; }
+    main .gridPadreContacto form .boxMensaje {
+      margin-top: 2rem; }
+    main .gridPadreContacto form input {
+      height: 20px;
+      transition: background-color 1s; }
+    main .gridPadreContacto form input:hover {
+      background-color: #FFAB5C; }
+    main .gridPadreContacto form label {
+      text-align: center; }
+    main .gridPadreContacto form .botones {
+      margin-top: 15px;
+      font-size: 35px; }
+      main .gridPadreContacto form .botones .modal-body {
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif; }
+      main .gridPadreContacto form .botones a {
+        background-image: none;
+        color: black; }

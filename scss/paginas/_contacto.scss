@@ -1,0 +1,60 @@
+
+
+main{
+
+    .gridPadreContacto{
+        display: grid;
+        background-image: url(https://st4.depositphotos.com/16122460/i/600/depositphotos_264157144-stock-photo-beautiful-woman-with-stylish-nail.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "formulario"
+        ;
+
+        form{
+            position: relative;
+            text-align: center;
+            margin-bottom: 200px;
+            font-size: 22px;
+            color: #DB478F;
+            bottom: 50px;
+            top: 150px;
+
+            .campo{
+                display: block;
+                width: 50%;
+                padding: 10px;
+                margin: 10px auto;
+                }
+            .boxMensaje{
+                margin-top: 2rem;
+                }
+            input{
+                height: 20px;
+                transition: background-color 1s;
+                }
+            input:hover{
+                background-color: #FFAB5C;
+                }
+            label{
+                text-align: center;
+                }
+            .botones{
+                margin-top: 15px;
+                font-size: 35px;
+
+                .modal-body{
+                    font-size: 15px;
+                    font-family: 'Roboto', sans-serif;
+                    }
+                a{
+                    background-image: none;
+                    color: black;
+                    
+                }
+                }
+            }
+        }
+    }

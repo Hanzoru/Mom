@@ -1,0 +1,14 @@
+main{
+    .gridPadreCursos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "imagen"
+        "textos";
+
+        .contenedor {
+            @include contenedor
+        }
+    }
+}
