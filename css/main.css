@@ -595,10 +595,13 @@ main .gridPadreContacto {
         background-image: none;
         color: black; }
 
-@media only screen and (max-width: 599px) and (min-width: 250px) {
+@media only screen and (min-width: 250px) {
   .boxMensaje {
     width: 60%; } }
 
+/* @media only screen and (max-width:599px) and (min-width:250px){
+    
+} */
 @media only screen and (max-width: 899x) and (min-width: 600px) {
   .barraNavegacion {
     display: none; }
