@@ -574,7 +574,7 @@ main .gridPadreContacto {
     top: 150px; }
     main .gridPadreContacto form .campo {
       display: block;
-      width: 40%;
+      width: 50%;
       margin: 10px auto; }
     main .gridPadreContacto form .boxMensaje {
       margin-top: 2rem; }
@@ -599,9 +599,6 @@ main .gridPadreContacto {
   .boxMensaje {
     width: 60%; } }
 
-/* @media only screen and (max-width:599px) and (min-width:250px){
-    
-} */
 @media only screen and (max-width: 899x) and (min-width: 600px) {
   .barraNavegacion {
     display: none; }
