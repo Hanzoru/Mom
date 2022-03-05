@@ -177,7 +177,8 @@ main .gridPadreQuienesSomos {
       main .gridPadreQuienesSomos .contenedor .row .column .card, main .gridPadreQuienesSomos .contenedor .row .column .card .thumbnail {
         box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2);
         background-image: linear-gradient(0deg, #fbfbfb 0%, #4a463d 100%);
-        border-radius: 10px; }
+        border-radius: 10px;
+        width: 330px; }
         main .gridPadreQuienesSomos .contenedor .row .column .card .thumbnail {
           animation: pulse 1s infinite; }
         main .gridPadreQuienesSomos .contenedor .row .column .card .imgCard {
@@ -257,7 +258,9 @@ footer .gridPadreFooter {
 .logoWhatsappPropiedades {
   width: 90px; }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 250px) {
+  .card, main .gridPadreQuienesSomos .contenedor .row .column .card .thumbnail {
+    width: 200px; }
   .barraNavegacion {
     display: none; }
     .barraNavegacion ul li {
@@ -592,7 +595,11 @@ main .gridPadreContacto {
         background-image: none;
         color: black; }
 
-@media only screen and (max-width: 900x) and (min-width: 600px) {
+@media only screen and (max-width: 599px) and (min-width: 250px) {
+  .boxMensaje {
+    width: 60%; } }
+
+@media only screen and (max-width: 899x) and (min-width: 600px) {
   .barraNavegacion {
     display: none; }
   .botonMenu {
