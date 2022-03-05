@@ -68,6 +68,9 @@ h3 {
   padding: 1rem 0 1rem 0;
   font-size: 25px; }
 
+h4 {
+  font-size: 14px; }
+
 footer {
   background-color: #FEF5ED;
   width: 100%;
@@ -167,7 +170,6 @@ main .gridPadreQuienesSomos {
     box-shadow: 0 0 0 15px rgba(255, 122, 0, 0); } }
     main .gridPadreQuienesSomos .contenedor .row .column {
       margin: auto;
-      width: 30%;
       margin-bottom: 16px;
       padding: 0 8px;
       position: relative;
@@ -179,12 +181,18 @@ main .gridPadreQuienesSomos {
         main .gridPadreQuienesSomos .contenedor .row .column .card .thumbnail {
           animation: pulse 1s infinite; }
         main .gridPadreQuienesSomos .contenedor .row .column .card .imgCard {
-          max-height: 400px;
+          max-height: 350px;
+          width: 500px;
           object-fit: cover; }
         main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas {
-          padding: 0 16px; }
-          main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas .contenedorTarjetas:after, main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas .row::after {
-            content: "";
+          padding: 0 16px;
+          width: 600px; }
+          main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas .contenedorTarjetas:after {
+            content: "none";
+            clear: both;
+            display: table; }
+          main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas .row::after {
+            content: "none";
             clear: both;
             display: table; }
           main .gridPadreQuienesSomos .contenedor .row .column .card .contenedorTarjetas .title {
@@ -249,7 +257,7 @@ footer .gridPadreFooter {
 .logoWhatsappPropiedades {
   width: 90px; }
 
-@media only screen and (min-width: 300px) {
+@media only screen and (min-width: 320px) {
   .barraNavegacion {
     display: none; }
     .barraNavegacion ul li {
@@ -284,7 +292,7 @@ footer .gridPadreFooter {
     transition: all 0.5s; }
   .thumbnail {
     animation: pulse 1s infinite;
-    width: 400px;
+    width: 360px;
     margin: 0 15px 39px 0;
     z-index: 1000; }
   @keyframes pulse {
@@ -563,8 +571,7 @@ main .gridPadreContacto {
     top: 150px; }
     main .gridPadreContacto form .campo {
       display: block;
-      width: 50%;
-      padding: 10px;
+      width: 40%;
       margin: 10px auto; }
     main .gridPadreContacto form .boxMensaje {
       margin-top: 2rem; }
