@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+
+
 header{
     font-family: 'Roboto', sans-serif;
     width:100%;
@@ -31,7 +33,7 @@ li {
 
 p{
     color: #090A13;
-    font-size: 24px;
+    font-size: 28px;
     text-align: center;
     line-height: 50px;
     padding-left: 1%;
@@ -89,6 +91,82 @@ footer {
     }
 }
 
+.logoWhatsapp{
+    position: sticky;
+    height: 10vh;
+    float: left;
+    bottom: 5vh;
+    padding: 0 4vh 0 0;
+}
+
 .contenedor {
     @include contenedor
 }
+
+nav {
+    .container-fluid{
+        background-image: $fondoNav;
+
+        .logo{
+            margin-left: 50px;
+            font-family:$FuentePrincipal;
+            color: $ColorLogo;
+        }
+            .colorNav{
+                color: #000000;
+                list-style: none;
+                font-weight: 10px;
+            }
+        
+        .botonMenu{
+        
+
+            .offcanvas-end {
+
+                .offcanvas-header {
+                    
+                    .offcanvas-title {
+                        color:$ColorLogo;
+
+                        .offcanvas-body{ 
+                            background-color: #000000;
+                        }
+                    }
+                    .menuDesplegado{
+                        font-size: 15px;
+                        margin-top:15px;
+                    }    
+                }
+            }
+        }
+    }
+}
+
+/* @media only screen and (max-width:799px) and (min-width:600px) {
+
+    
+    .botonMenu {
+        display: inline;
+    }
+
+    .barraNavegacion {
+        display: none;
+    }
+
+    .imagenEncabezado {
+        width: 800px;
+    }
+    .contenedorInfo {
+        margin-left: 50px;
+    }
+    #footerTrending {
+        display: none;
+    }
+    .tituloNovedades {
+        text-align: center;
+    }
+
+    .gridPadreServicios {
+        overflow-x:scroll ;
+    }
+} */

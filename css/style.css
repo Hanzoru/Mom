@@ -577,7 +577,7 @@ input:hover {
 }
 
 
-.imgDiv{
+.imgFooter{
     position: relative;
     width: 100%;
     height: 20rem;
@@ -765,9 +765,9 @@ input:hover {
         background-color: #ED729C;
         display: none;
     }
-
+/* Pasado a SASS */
     /* VISTA MOBILE INDEX */
-    buttonCard{
+    .buttonCard{
     border: none;
     outline: 0;
     display: inline-block;
@@ -778,12 +778,13 @@ input:hover {
     cursor:pointer;
     width: 80%;
 }
-
+/* Pasado a SASS */
     .separadorPropiedades {
         width: 300px ;
         margin-top: 50px;
     }
-
+/* Pasado a SASS
+------------------------ */
     .separador2Propiedades {
         width: 300px ;
         margin-top: 50px;
@@ -851,7 +852,8 @@ input:hover {
     .colorNav {
         font-size: 20px;
     }
-
+/* Pasado a SASS 
+------------------*/
     .cursoImg2{
         width: 100%;
         margin-bottom: 50px;

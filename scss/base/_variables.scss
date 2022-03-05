@@ -13,6 +13,13 @@ $redesSociales: (
     facebook: #3c27c2
 );
 
+$FondoFooter: (
+    blanco-crema:#FEF5ED,
+    negro:#0000
+);
+
+$fondoNav: radial-gradient(circle, rgba(241,226,166,1) 0%, rgba(255,204,92,0.9164040616246498) 38%, rgba(230,164,151,0.8463760504201681) 100%);
+
 @each $redSocial, $color in $redesSociales{
     .icon-#{$redSocial}{
         color:$color;
@@ -26,6 +33,7 @@ $redesSociales: (
     font-size: 30px;
     margin-bottom: 2rem;
 }
+
 
 @mixin h3-propiedades {
     text-align: center;
@@ -56,10 +64,28 @@ $redesSociales: (
     width: 50%;
 }
 
+@mixin footer {
+    .gridPadreFooter {
+        padding-bottom: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "instagram facebook";
+
+        .instagram{
+            grid-area: instagram;
+        }
+        .facebook{
+            grid-area: facebook;
+        }
+    }
+}
+
 @mixin contenedor {
     text-align: center;
-    margin: 10rem 3rem 3rem 3rem ;
-    padding: 30px;
+    margin: 10rem 0 2rem 0;
+    padding: 10px;
     border-radius: 4px;
     background-image: radial-gradient(circle, rgba(241,226,166,1) 0%, rgba(255,171,92,1) 35%, rgba(224,138,121,1) 100%);
     border-radius: 20px;
@@ -68,19 +94,35 @@ $redesSociales: (
     height: auto;
 }
 
+@mixin logo{
+    margin: 10px;
+    text-align: center;
+}
+
 @mixin buttonCard{
     border: none;
     outline: 0;
     display: inline-block;
-    padding: 8px;
+    padding: 0px;
     color:white;
     background-color:#000;
     text-align: center;
     cursor:pointer;
-    width: 50%;
+    width: 98%;
 }
 
-$FondoFooter: (
-    blanco-crema:#FEF5ED,
-    negro:#0000
-)
+@mixin mediaQuery ($diseñoPantalla){
+    @if $diseñoPantalla == mobile {
+        @media only screen and (min-width: 300px){ 
+            @content;
+            }
+    } @else if $diseñoPantalla == tablet { 
+        @media only screen and (min-width: 800px){
+            @content;
+        }
+    } @else if $diseñoPantalla == desktop{
+        @media only screen and (min-width: 900px){
+            @content;
+        }
+    }
+}

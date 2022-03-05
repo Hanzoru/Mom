@@ -1,86 +1,37 @@
-section{
-    .imagenEncabezado {
-        height: 30rem;
-        object-fit: cover; 
-        width: 100%;
-        border-bottom: 3px solid black;
+main{
+
+    .headImg{
+
+        .imagenEncabezado {
+            height: 30rem;
+            object-fit: cover; 
+            width: 100%;
+            border-bottom: 3px solid black;
+        }
     }
-}
-
-section{
-    .tituloNovedades{
-        text-align: center;
-        font-size: 2rem;
-        z-index: 2;
-    }
-    .contenedorInfo {
-        position: relative;
-        height: 300px;
-        width: 800px;
-        margin:auto;
-
-        .box1:nth-child(1) {
-            .icon{
-                background: #FA4D29;
-            }
-            
+    .boxInfo{
+        .tituloNovedades{
+            text-align: center;
+            font-size: 2rem;
+            z-index: 2;
         }
-        .box1:nth-child(2) {
-            .icon{
-                background: #FA4D29;
-            }
-        }
-        .box1:nth-child(3) {
-            .icon {
-                background: #FA4D29;
-            }
-        }
-
-        .box1:nth-child(4) {
-            .icon {
-                background: #7B72ED;
-            }
-        }
-
-
-        .box1{
+        .contenedorInfo{
             position: relative;
-            width: 400px;
-            height: 400px;
-            background: #C5E3F0;
-            float: left;
-            margin: 40px;
-            box-sizing:border-box;
-            overflow: hidden;
-            left: 9rem;
-            border-radius: 10px;
+            height: 300px;
+            
 
-                .content{
-                    position: absolute;
-                    height: calc(100% - 10px);
-                    text-align: center;
-                    padding: 20px;
-                    top:100%;
-                    transition: 0.5s;
+            .box1{
+                position: relative;
+                width: 400px;
+                height: 450px;
+                background: #C5E3F0;
+                float: left;
+                box-sizing:border-box;
+                overflow: hidden;
+                border-radius: 10px;
+                margin:10px 10px 100px 10px;
 
-                    .spanTitulo {
-                        color:#C227A0;
-                        font-size: 25px;
-                    }
-
-                    h3{
-                        margin: 0;
-                        padding: 0;
-                        color:black;
-                    }
-                    p{
-                        margin: 0;
-                        padding: 0;
-                        color:black;
-                    }
-                }
-
-                .icon {
+                .icon{
                     position: absolute;
                     top:0;
                     left: 0;
@@ -106,5 +57,65 @@ section{
                     border-radius:50%;
                 }
             }
+            .content{
+                position: relative;
+                height: calc(100% - 10px);
+                text-align: center;
+                padding: 20px;
+                top:100%;
+                transition: 0.5s;
+
+                h3{
+                    margin: 0;
+                    padding: 0;
+                    color:black;
+                }
+                p{
+                    margin: 0;
+                    padding: 0;
+                    color:black;
+                }
+            }
+        }
+        .box1:hover{
+            .icon{
+                .ic{
+                    height: 80px;
+                }
+            }
+            .content{
+                top:100px;
+            }
+        }
+        .box1:nth-child(1){
+            .icon{
+                background: #FA4D29;
+            }
+        }
+        .box1:nth-child(2){
+            .icon{
+                background: #E0A577;
+            }
+        }
+        .box1:nth-child(3){
+            .icon{
+                background: #ED729C;
+            }
+        }
+        .box1:nth-child(4){
+            .icon{
+                background: #7B72ED;
+            }
+        }
     }
+}
+
+@media only screen and (max-width:599px) and (min-width:380px){
+    .box1{
+        margin:10px 10px 100px 50px;
+    }
+}
+
+footer{
+    @include footer;
 }
