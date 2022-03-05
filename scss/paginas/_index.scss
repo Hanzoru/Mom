@@ -10,12 +10,13 @@ main {
 
         .carousel-item {
             max-height: 700px;
+            min-width: 500px;
         }
     }
 
     .carousel-inner {
         object-fit: cover;
-        width: 80%;
+        width: 100%;
         margin: auto;
     }
     .separador {

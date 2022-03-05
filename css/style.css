@@ -527,9 +527,6 @@ input:hover {
     margin-top: 2rem;
 }
 
-
-
-
 .gridPadreCursos{
     display: grid;
     grid-template-columns: 1fr;
@@ -740,7 +737,6 @@ input:hover {
 
 @media only screen and (max-width:599px) {
 
-    /* VISTA MOBILE TRENDING */
 
 .botonMenu {
     display: inline;
@@ -765,7 +761,7 @@ input:hover {
         background-color: #ED729C;
         display: none;
     }
-/* Pasado a SASS */
+
     /* VISTA MOBILE INDEX */
     .buttonCard{
     border: none;
@@ -778,118 +774,115 @@ input:hover {
     cursor:pointer;
     width: 80%;
 }
-/* Pasado a SASS */
+
     .separadorPropiedades {
         width: 300px ;
         margin-top: 50px;
     }
-/* Pasado a SASS
------------------------- */
-    .separador2Propiedades {
-        width: 300px ;
-        margin-top: 50px;
-    }
 
-    p{
-        text-align: start;
-        font-size: 23px;
-    }
+.separador2Propiedades {
+    width: 300px ;
+    margin-top: 50px;
+}
 
-    .column {
-        width: 100%;
-        display: block;
-    }
+p{
+    text-align: start;
+    font-size: 23px;
+}
 
-    .videoDerecha{
+.column {
+    width: 100%;
+    display: block;
+}
+
+.videoDerecha{
     width: 100%;
     filter: drop-shadow(16px 16px 10px black);
     transition: all 0.5s;
-    } 
+} 
 
-    .thumbnail{
-        animation: pulse 1s infinite;
-        width: 200px;
-        margin: 0 15px 39px 0;
-        z-index: 1000;
-    }
+.thumbnail{
+    animation: pulse 1s infinite;
+    width: 200px;
+    margin: 0 15px 39px 0;
+    z-index: 1000;
+}
     
-    @keyframes pulse {
-        from {
-            box-shadow: 0 0 0 0 #F6A5E4;
-        }
-        to {
-            box-shadow: 0 0 0 15px rgba(255, 122, 0, 0);
-        }
+@keyframes pulse {
+    from {
+        box-shadow: 0 0 0 0 #F6A5E4;
+    }
+    to {
+        box-shadow: 0 0 0 15px rgba(255, 122, 0, 0);
+    }
 
     }
 
-    header{
-        font-family: 'Roboto', sans-serif;
-        display:inline-block;
-        width:100%;
-        height: 150px;
-        align-items: center;
-        position: fixed;
-        z-index: 100;
-    }
+header{
+    font-family: 'Roboto', sans-serif;
+    display:inline-block;
+    width:100%;
+    height: 150px;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
 
-    .barraNavegacion {
-        display: none;
-    }
+.barraNavegacion {
+    display: none;
+}
 
-    .barraNavegacion ul li {
-        margin: 0 0 10px 0;
-        padding: 0;
-    }
-
-
-    .logo{
-        margin: 10px;
-        text-align: center;
-    }
+.barraNavegacion ul li {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
 
 
-    .colorNav {
-        font-size: 20px;
-    }
-/* Pasado a SASS 
-------------------*/
-    .cursoImg2{
-        width: 100%;
-        margin-bottom: 50px;
-    }
+.logo{
+    margin: 10px;
+    text-align: center;
+}
 
-    .cursoImg1 {
-        width: 100%;
-        margin-bottom: 50px;
-    }
 
-    footer{
-        width: 100%;
-        height: 150px;
-    }
+.colorNav {
+    font-size: 20px;
+}
 
-    .imgDiv{
-        display: none;
-    }
+.cursoImg2{
+    width: 100%;
+    margin-bottom: 50px;
+}
 
-    #footerCursos{
-        display: none;
-    }
+.cursoImg1 {
+    width: 100%;
+    margin-bottom: 50px;
+}
 
-    footer h4 {
-        font-size: 19px;
-    }
+footer{
+    width: 100%;
+    height: 150px;
+}
 
-    .gridPadreServicios {
-        overflow-x: scroll;
-    }
+.imgDiv{
+    display: none;
+}
 
-    .contenidoPrecios {
-        overflow-x: scroll;
-    }
+#footerCursos{
+    display: none;
+}
 
-    /* Servicios */
+footer h4 {
+    font-size: 19px;
+}
+
+.gridPadreServicios {
+    overflow-x: scroll;
+}
+
+.contenidoPrecios {
+    overflow-x: scroll;
+}
+
 
 .introServicios p {
     text-align: center;

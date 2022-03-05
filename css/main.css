@@ -74,7 +74,8 @@ footer {
   height: 100px;
   display: flex;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: center;
+  bottom: 0; }
   footer ul li {
     list-style-type: none; }
     footer ul li a {
@@ -123,44 +124,17 @@ nav .container-fluid {
     font-size: 15px;
     margin-top: 15px; }
 
-/* @media only screen and (max-width:799px) and (min-width:600px) {
-
-    
-    .botonMenu {
-        display: inline;
-    }
-
-    .barraNavegacion {
-        display: none;
-    }
-
-    .imagenEncabezado {
-        width: 800px;
-    }
-    .contenedorInfo {
-        margin-left: 50px;
-    }
-    #footerTrending {
-        display: none;
-    }
-    .tituloNovedades {
-        text-align: center;
-    }
-
-    .gridPadreServicios {
-        overflow-x:scroll ;
-    }
-} */
 main .carousel {
   object-fit: cover; }
   main .carousel .carousel-control-prev {
     color: #000000; }
   main .carousel .carousel-item {
-    max-height: 700px; }
+    max-height: 700px;
+    min-width: 500px; }
 
 main .carousel-inner {
   object-fit: cover;
-  width: 80%;
+  width: 100%;
   margin: auto; }
 
 main .separador {
@@ -377,7 +351,7 @@ main .boxInfo .contenedorInfo {
   main .boxInfo .contenedorInfo .box1 {
     position: relative;
     width: 400px;
-    height: 450px;
+    height: 400px;
     background: #C5E3F0;
     float: left;
     box-sizing: border-box;
