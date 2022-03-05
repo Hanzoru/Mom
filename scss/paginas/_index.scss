@@ -126,10 +126,11 @@ footer{
     .gridPadreFooter {
         padding-bottom: 100px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
         grid-template-areas: 
-        "instagram facebook";
+        "instagram"
+        "facebook";
 
         .instagram{
             grid-area: instagram;
