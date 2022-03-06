@@ -119,11 +119,6 @@ header{
     margin-left: 7%;
     margin-bottom: 3%;
 }
-/* BORRAR PARA HACER FUNCIONAL CARRUSEL */
-/* .carousel{
-    display: flex;
-    align-items: center;
-} */
 
 .carousel {
     object-fit: cover;
@@ -145,13 +140,12 @@ header{
     font-weight: 10px;
 }
 
-/* Pasado a scss General */
 li{
     display: inline;
     padding: 20px;
     border-radius: 10%;
 }
-/* Pasado a scss */
+
 a:hover,
 a:focus {
     background-size: 100% 2px;
@@ -274,7 +268,7 @@ a{
     margin-top: 40px;
     margin-bottom: 50px;
 } 
-/* Pasado a Scss */
+
 .videoDerecha{
     float: right;
     width: 400px;
@@ -283,16 +277,6 @@ a{
     transition: all 0.5s;
     border-radius: 10px;
 } 
-/* Pasado a Scss */
-
-/* QUITAR DE CSS */
-/* .footTitle{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: inline-block;
-    padding: 10px;
-} */
-/* QUITAR DE CSS */
 
 gridPadreFooter{
     display: grid;
