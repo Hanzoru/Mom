@@ -43,13 +43,17 @@ main{
         position: relative;
         width: 100%;
         height: 20rem;
+        border: 2px dotted black;
     }
 }
 footer{
     @include footer;
 }
 
-@media only screen and (max-width:599px) and (min-width:400px){
+@media only screen and (max-width:599px) and (min-width:250px){
+    .imgFooter{
+        display:none;
+    }
     .contenedor{
         padding: 10px;
     }
